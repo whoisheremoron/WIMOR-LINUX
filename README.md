@@ -63,22 +63,22 @@ This fork focuses on bringing actual **HvH capabilities** and user experience en
 
 ### Run Build & Inject:
 ```sh
-git clone https://github.com/whoisheremoron/gamesneeze # Replace with your fork URL
-cd gamesneeze
-chmod +x toolbox.sh
-./toolbox.sh -b -l # Build and load/inject
+git clone https://github.com/whoisheremoron/WIMOR-LINUX.git
+cd WIMOR-LINUX
+
+# 1. Сборка чита
+mkdir -p build && cd build
+cmake -D CMAKE_BUILD_TYPE=Release ..
+make -j$(nproc --all)
+cd ..
+
+# 2. Инжект чита (убедись, что игра запущена!)
+chmod +x run.sh
+./run.sh
 ```
 
-## Basic toolbox.sh usage
+## Использование `run.sh`
+Скрипт `./run.sh` автоматически копирует скомпилированную библиотеку в директорию игры (`csgo legacy/bin`) и осуществляет инжект в процесс `csgo_linux64` через GDB.
 
-| Argument           | Description                               |
-| ------------------ | ----------------------------------------- |
-| -u (--unload)      | Unload the utility from CS:GO if loaded   |
-| -l (--load)        | Load/inject the utility via gdb           |
-| -ld (--load_debug) | Load/inject the utility and debug via gdb |
-| -b (--build)       | Build to the build/ dir                   |
-| -bd (--build_debug)| Build to the build/ dir as debug          |
-| -p (--pull)        | Update the code from remote repo          |
-| -h (--help)        | Show help                                 |
+*При повторном изменении кода просто перекомпилируй его с помощью `make` в папке `build` и запусти `./run.sh`.*
 
-Example: `./toolbox.sh -u -b -l` will unload the currently injected library, compile the latest changes, and inject it back.
