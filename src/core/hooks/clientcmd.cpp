@@ -8,6 +8,10 @@
 #include <string_view>
 
 void Hooks::ClientCmd::hook(void* thisptr, char* szCmdString) {
+    if (Globals::unloading) {
+        original(thisptr, szCmdString);
+        return;
+    }
     if (strstr(szCmdString, "say ") && CONFIGBOOL("Misc>Misc>Misc>Chat Filter Bypass")) {
         // https://www.unknowncheats.me/forum/counterstrike-global-offensive/439677-bypass-chat-swear-filter.html
         std::reverse(szCmdString+5, szCmdString + strlen(szCmdString)-1);

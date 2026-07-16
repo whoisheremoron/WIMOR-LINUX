@@ -11,32 +11,16 @@ inline void startMovementFix(CUserCmd* cmd) {
 }
 
 inline void endMovementFix(CUserCmd* cmd) {
-    // this was just taken from designer bc im lazy
-    // https://github.com/designer1337/csgo-cheat-base/blob/09fa2ba8de52eef482bbc82f682976e369191077/dependencies/math/math.cpp#L4
-    float deltaViewAngles;
-	float f1;
-	float f2;
-
-	if (originalAngle.y < 0.f)
-		f1 = 360.0f + originalAngle.y;
-	else
-		f1 = originalAngle.y;
-
-	if (cmd->viewangles.y < 0.0f)
-		f2 = 360.0f + cmd->viewangles.y;
-	else
-		f2 = cmd->viewangles.y;
-
-	if (f2 < f1)
-		deltaViewAngles = abs(f2 - f1);
-	else
-		deltaViewAngles = 360.0f - abs(f1 - f2);
-
-	deltaViewAngles = 360.0f - deltaViewAngles;
-
-	cmd->forwardmove = cos(DEG2RAD(deltaViewAngles)) * originalForwardMove + cos(DEG2RAD(deltaViewAngles + 90.f)) * originalSideMove;
-	cmd->sidemove = sin(DEG2RAD(deltaViewAngles)) * originalForwardMove + sin(DEG2RAD(deltaViewAngles + 90.f)) * originalSideMove;
-    // TODO: support upmove
+    // Correct absolute yaw rotation correction
+    float deltaYaw = cmd->viewangles.y - originalAngle.y;
+    float deltaYawRad = DEG2RAD(deltaYaw);
+    
+    float originalForward = originalForwardMove;
+    float originalSide = originalSideMove;
+    
+    // Standard 2D vector rotation projection formula
+    cmd->forwardmove = cos(deltaYawRad) * originalForward - sin(deltaYawRad) * originalSide;
+    cmd->sidemove = sin(deltaYawRad) * originalForward + cos(deltaYawRad) * originalSide;
 }
 
 inline void normalizeAngles(QAngle& angle) {

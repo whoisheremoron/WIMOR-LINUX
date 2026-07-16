@@ -29,7 +29,7 @@ bool visCheck(Player* player) {
                                     // solid|opaque|moveable|ignore nodraw
         Interfaces::trace->TraceRay(rayToUpperSpinal, (0x1 | 0x80 | 0x4000 |    0x2000   ), &filter, &traceToUpperSpinal);
 
-        return (traceToHead.m_pEntityHit == player) && (traceToUpperSpinal.m_pEntityHit == player) && !Offsets::lineGoesThroughSmoke(Globals::localPlayer->eyePos(), player->eyePos(), 1);
+        return ((traceToHead.m_pEntityHit == player) || (traceToUpperSpinal.m_pEntityHit == player)) && !Offsets::lineGoesThroughSmoke(Globals::localPlayer->eyePos(), player->eyePos(), 1);
     }
     return false;
 }
@@ -104,6 +104,7 @@ Vector Player::getBonePos(int bone) {
                       playerCache[index()].boneMatrixAnything[bone][1][3], 
                       playerCache[index()].boneMatrixAnything[bone][2][3]);
     }
+    return Vector(0, 0, 0);
 }
 
 bool Player::getHitboxBones(matrix3x4_t* boneMatrix) {

@@ -1,6 +1,174 @@
 #include "../menu.hpp"
 #include <filesystem>
+#include <vector>
 #include "../config.hpp"
+#include <sys/mman.h>
+#include <unistd.h>
+#include <dlfcn.h>
+#include <thread>
+#include <chrono>
+#include "../../hooks/hooks.hpp"
+#include "../../../sdk/interfaces/interfaces.hpp"
+
+static void selfUnload() {
+    Globals::unloading = true; // Instantly bypass all hooks to prevent execution during unmapping
+
+    std::thread([]() {
+        // Wait 300ms for active hook execution calls to return safely
+        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+        
+        Hooks::unload();
+        Interfaces::unload();
+        
+        // Wait another 300ms for safety
+        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+        
+        void* handle = dlopen("libwimor.so", RTLD_NOLOAD | RTLD_LAZY);
+        if (!handle) {
+            handle = dlopen("libgamesneeze.so", RTLD_NOLOAD | RTLD_LAZY);
+        }
+        if (!handle) return;
+        
+        dlclose(handle);
+        
+        void* dlclose_fn = dlsym(RTLD_DEFAULT, "dlclose");
+        void* pthread_exit_fn = dlsym(RTLD_DEFAULT, "pthread_exit");
+        
+        if (!dlclose_fn || !pthread_exit_fn) return;
+
+        void* mem = mmap(NULL, 128, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+        if (mem == MAP_FAILED) return;
+
+        unsigned char stub[] = {
+            0x48, 0x89, 0xf8,       // mov %rdi, %rax
+            0x48, 0x89, 0xf7,       // mov %rsi, %rdi
+            0xff, 0xd0,             // call *%rax
+            0x48, 0x89, 0xd0,       // mov %rdx, %rax
+            0x48, 0x31, 0xff,       // xor %rdi, %rdi
+            0xff, 0xd0              // call *%rax
+        };
+        
+        memcpy(mem, stub, sizeof(stub));
+        
+        typedef void (*stub_t)(void* dlclose_fn, void* handle, void* pthread_exit_fn);
+        stub_t run_stub = (stub_t)mem;
+        
+        run_stub(dlclose_fn, handle, pthread_exit_fn);
+    }).detach();
+}
+
+struct PaintKitInfo {
+    int id;
+    const char* name;
+};
+
+static const std::vector<PaintKitInfo> g_skins = {
+    {0, "Default"},
+    // AK-47
+    {302, "Vulcan"},
+    {282, "Redline"},
+    {44, "Case Hardened"},
+    {639, "Asiimov"},
+    {600, "Neon Revolution"},
+    {490, "Frontside Misty"},
+    {675, "Empress"},
+    {380, "Wasteland Rebel"},
+    {524, "Fuel Injector"},
+    {635, "Bloodsport"},
+    {180, "Fire Serpent"},
+    {724, "Wild Lotus"},
+    {1073, "Gold Arabesque"},
+    {1143, "Head Shot"},
+    
+    // M4A4
+    {309, "Howl"},
+    {255, "Asiimov"},
+    {695, "Neo-Noir"},
+    {664, "Hellfire"},
+    {632, "Buzz Kill"},
+    {155, "Bullet Rain"},
+    {588, "Desolate Space"},
+    {486, "Evil Daimyo"},
+    {844, "Emperor"},
+    {1141, "Temukau"},
+    
+    // M4A1-S
+    {430, "Hyper Beast"},
+    {644, "Decimator"},
+    {548, "Chantico's Fire"},
+    {497, "Golden Coil"},
+    {440, "Icarus Fell"},
+    {33, "Hot Rod"},
+    {984, "Printstream"},
+    {1001, "Welcome to the Jungle"},
+    {326, "Knight"},
+    {1112, "Emphorosaur-S"},
+    
+    // AWP
+    {344, "Dragon Lore"},
+    {446, "Medusa"},
+    {756, "Gungnir"},
+    {279, "Asiimov"},
+    {445, "Hyper Beast"},
+    {212, "Graphite"},
+    {662, "Oni Taiji"},
+    {627, "Fever Dream"},
+    {838, "Atheris"},
+    {917, "Wildfire"},
+    {803, "Neo-Noir"},
+    {1026, "Fade"},
+    
+    // Desert Eagle
+    {37, "Blaze"},
+    {961, "Printstream"},
+    {711, "Code Red"},
+    {185, "Golden Koi"},
+    {1096, "Fennec Fox"},
+    {599, "Mecha Industries"},
+    {351, "Conspiracy"},
+    
+    // USP-S
+    {504, "Kill Confirmed"},
+    {653, "Neo-Noir"},
+    {313, "Orion"},
+    {1037, "Printstream"},
+    {360, "Cyrex"},
+    {705, "Cortex"},
+    {1004, "Monster Mashup"},
+    
+    // Glock-18
+    {38, "Fade"},
+    {353, "Water Elemental"},
+    {957, "Neo-Noir"},
+    {918, "Bullet Queen"},
+    {586, "Wasteland Rebel"},
+    
+    // Knives & General Fades/Crimson Webs
+    {12, "Crimson Web"},
+    {27, "Bone Mask"},
+    {38, "Fade"},
+    {40, "Night"},
+    {42, "Blue Steel"},
+    {43, "Stained"},
+    {44, "Case Hardened"},
+    {59, "Slaughter"},
+    {72, "Safari Mesh"},
+    {77, "Boreal Forest"},
+    {98, "Ultraviolet"},
+    {143, "Hunting Blind"},
+    {323, "Lapis Gator"},
+    {413, "Marble Fade"},
+    {414, "Doppler"},
+    {415, "Ruby"},
+    {416, "Sapphire"},
+    {417, "Black Pearl"},
+    {568, "Emerald"},
+    {569, "Lore"},
+    {570, "Black Laminate"},
+    {571, "Autotronic"},
+    {572, "Bright Water"},
+    {983, "Gold"},
+};
 
 void Menu::drawMiscTab() {
     if (ImGui::BeginTabBar("##miscTabs")) {
@@ -52,12 +220,12 @@ void Menu::drawMiscTab() {
 
             ImGui::NextColumn();
 
-            ImGui::BeginChild("Config", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.307), true); {
+            ImGui::BeginChild("Config", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.31f), true); {
                 ImGui::Text("Config");
                 ImGui::Separator();
 
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
-                ImGui::ListBoxHeader("##configlist-lbox", ImVec2(0, 100));
+                ImGui::ListBoxHeader("##configlist-lbox", ImVec2(0, 70));
                 for (std::string file : Config::cfgFiles) {
                     if (ImGui::Button(file.c_str())) {
                         strcpy(Config::configFileName, file.c_str());
@@ -77,10 +245,20 @@ void Menu::drawMiscTab() {
                 if (ImGui::Button("Remove", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.315, 0))) {
                     Config::remove();
                 };
+
+                ImGui::Spacing();
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.8f, 0.1f, 0.15f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.9f, 0.2f, 0.25f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.7f, 0.0f, 0.05f, 1.0f));
+                if (ImGui::Button("Unload Cheat", ImVec2(ImGui::GetWindowContentRegionWidth(), 30))) {
+                    selfUnload();
+                }
+                ImGui::PopStyleColor(3);
+
                 ImGui::EndChild();
             }
 
-            ImGui::BeginChild("Clantag", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.21f), true); {
+            ImGui::BeginChild("Clantag", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.17f), true); {
                 ImGui::Text("Clantag");
                 ImGui::Separator();
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
@@ -91,7 +269,7 @@ void Menu::drawMiscTab() {
                 ImGui::EndChild();
             }
 
-            ImGui::BeginChild("Movement", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.326f), true); {
+            ImGui::BeginChild("Movement", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.39f), true); {
                 ImGui::Text("Movement");
                 ImGui::Separator();
                 ImGui::Checkbox("Auto Hop", &CONFIGBOOL("Misc>Misc>Movement>Auto Hop"));
@@ -125,11 +303,43 @@ void Menu::drawMiscTab() {
                     ImGui::SameLine();
                 }
                 ImGui::Checkbox("EdgeBug", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug"));
+                if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug")) {
+                    ImGui::Checkbox("EdgeBug Highlight", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight"));
+                    if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight")) {
+                        ImGui::SameLine();
+                        ImGui::Checkbox("Always Show", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight Always"));
+                    }
+                    ImGui::Checkbox("EdgeBug Finder", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Finder"));
+                }
                 ImGui::Checkbox("Fast Duck", &CONFIGBOOL("Misc>Misc>Movement>Fast Duck"));
                 ImGui::SameLine();
                 ImGui::TextDisabled("?");
                 if (ImGui::IsItemHovered())
                     ImGui::SetTooltip("May cause untrusted, use at own risk!");
+                
+                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe")) {
+                    static bool toggled = false;
+                    Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Key"), &toggled);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("Auto Strafe", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe"));
+
+                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Right")) {
+                    static bool toggled = false;
+                    Menu::CustomWidgets::drawKeyBinder("Right Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Right Key"), &toggled);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("Auto Strafe Right (Sideways)", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Right"));
+
+                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Left")) {
+                    static bool toggled = false;
+                    Menu::CustomWidgets::drawKeyBinder("Left Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Left Key"), &toggled);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("Auto Strafe Left (Sideways)", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Left"));
+
+                ImGui::Checkbox("Auto Counter-Strafe", &CONFIGBOOL("Misc>Misc>Movement>Fast Stop"));
+                ImGui::Checkbox("Speed Indicator", &CONFIGBOOL("Misc>Misc>Movement>Speed Indicator"));
                 ImGui::EndChild();
             }
             ImGui::Columns(1);
@@ -141,39 +351,111 @@ void Menu::drawMiscTab() {
 
         if (ImGui::BeginTabItem("Skins")) {
             static ItemIndex curWeaponSelected = ItemIndex::WEAPON_AK47;
-            if (ImGui::BeginCombo("Weapon", itemIndexMap.at(curWeaponSelected))) {
+            
+            ImGui::Columns(2, "skinchanger_columns", false);
+            ImGui::SetColumnWidth(0, ImGui::GetWindowContentRegionWidth() * 0.35f);
+            ImGui::SetColumnWidth(1, ImGui::GetWindowContentRegionWidth() * 0.65f);
+            
+            // Left column: Weapon List
+            ImGui::BeginChild("Weapon Selection", ImVec2(0, 0), true); {
+                ImGui::Text("Weapons");
+                ImGui::Separator();
                 for (auto item : itemIndexMap) {
                     if (item.first != ItemIndex::INVALID) {
-                        ImGui::PushID(item.second);
-                        const bool is_selected = (itemIndexMap.at(curWeaponSelected) == item.second);
+                        const bool is_selected = (curWeaponSelected == item.first);
                         if (ImGui::Selectable(item.second, is_selected)) {
                             curWeaponSelected = item.first;
-                            FULLUPDATE();
                         }
-                        ImGui::PopID();
                     }
                 }
-                ImGui::EndCombo();
+                ImGui::EndChild();
             }
-            if (curWeaponSelected != ItemIndex::INVALID) {
-                char* buf = new char[256];
-                snprintf(buf, 256, "Misc>Skins>Skins>%s>PaintKit", itemIndexMap.at(curWeaponSelected));
-                if (ImGui::DragInt("PaintKit", &CONFIGINT(buf))) {
-                    FULLUPDATE();
+            
+            ImGui::NextColumn();
+            
+            // Right column: Settings for selected weapon
+            ImGui::BeginChild("Skin Config", ImVec2(0, 0), true); {
+                if (curWeaponSelected != ItemIndex::INVALID) {
+                    ImGui::Text("Settings for %s", itemIndexMap.at(curWeaponSelected));
+                    ImGui::Separator();
+                    
+                    bool isKnifeSelected = (curWeaponSelected == ItemIndex::WEAPON_KNIFE || 
+                                            curWeaponSelected == ItemIndex::WEAPON_KNIFE_T ||
+                                            (curWeaponSelected >= ItemIndex::WEAPON_KNIFE_BAYONET && curWeaponSelected <= ItemIndex::WEAPON_KNIFE_GHOST));
+                    
+                    const char* weaponName = isKnifeSelected ? "Knife" : itemIndexMap.at(curWeaponSelected);
+                    
+                    char buf[256];
+                    snprintf(buf, 256, "Misc>Skins>Skins>%s>PaintKit", weaponName);
+                    
+                    char buf2[256];
+                    snprintf(buf2, 256, "Misc>Skins>Skins>%s>Wear", weaponName);
+                    
+                    char buf3[256];
+                    snprintf(buf3, 256, "Misc>Skins>Skins>%s>StatTrack", weaponName);
+                    
+                    // Popular skins combo
+                    int currentPaintKit = CONFIGINT(buf);
+                    const char* previewName = "Custom / Unknown";
+                    for (const auto& skin : g_skins) {
+                        if (skin.id == currentPaintKit) {
+                            previewName = skin.name;
+                            break;
+                        }
+                    }
+                    
+                    if (ImGui::BeginCombo("Select Skin Preset", previewName)) {
+                        for (const auto& skin : g_skins) {
+                            const bool is_selected = (currentPaintKit == skin.id);
+                            if (ImGui::Selectable(skin.name, is_selected)) {
+                                CONFIGINT(buf) = skin.id;
+                            }
+                        }
+                        ImGui::EndCombo();
+                    }
+                    
+                    // Raw Paintkit ID
+                    ImGui::InputInt("PaintKit ID", &CONFIGINT(buf));
+                    
+                    // Wear Slider
+                    ImGui::SliderInt("Wear", &CONFIGINT(buf2), 0, 100);
+                    
+                    // StatTrak
+                    ImGui::InputInt("StatTrak", &CONFIGINT(buf3));
+                    
+                    if (isKnifeSelected) {
+                        ImGui::Separator();
+                        const char* knifeModelsList[] = {
+                            "Default", "Bayonet", "Flip Knife", "Gut Knife", "Karambit",
+                            "M9 Bayonet", "Huntsman Knife", "Falchion Knife", "Bowie Knife",
+                            "Butterfly Knife", "Shadow Daggers", "Ursus Knife", "Navaja Knife",
+                            "Stiletto Knife", "Talon Knife", "Classic Knife"
+                        };
+                        int currentKnife = CONFIGINT("Misc>Skins>Knife Model");
+                        if (ImGui::BeginCombo("Knife Model", knifeModelsList[currentKnife])) {
+                            for (int i = 0; i < 16; i++) {
+                                const bool is_selected = (currentKnife == i);
+                                if (ImGui::Selectable(knifeModelsList[i], is_selected)) {
+                                    CONFIGINT("Misc>Skins>Knife Model") = i;
+                                }
+                            }
+                            ImGui::EndCombo();
+                        }
+                    }
+                    
+                    ImGui::Spacing();
+                    ImGui::Separator();
+                    ImGui::Spacing();
+                    
+                    if (ImGui::Button("Apply Skins & Knife Model", ImVec2(-1, 30))) {
+                        FULLUPDATE();
+                    }
+                } else {
+                    ImGui::Text("Select a weapon to configure");
                 }
-
-                char* buf2 = new char[256];
-                snprintf(buf2, 256, "Misc>Skins>Skins>%s>Wear", itemIndexMap.at(curWeaponSelected));
-                if (ImGui::SliderInt("Wear", &CONFIGINT(buf2), 0, 100)) {
-                    FULLUPDATE();
-                }
-
-                char* buf3 = new char[256];
-                snprintf(buf3, 256, "Misc>Skins>Skins>%s>StatTrack", itemIndexMap.at(curWeaponSelected));
-                if (ImGui::DragInt("StatTrack", &CONFIGINT(buf3))) {
-                    FULLUPDATE();
-                }
+                ImGui::EndChild();
             }
+            ImGui::Columns(1);
             ImGui::EndTabItem();
         }
         ImGui::EndTabBar();

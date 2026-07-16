@@ -1,0 +1,3 @@
+/home/whoisheremoron/gamesneeze/build/CMakeFiles/gamesneeze.dir
+/home/whoisheremoron/gamesneeze/build/CMakeFiles/edit_cache.dir
+/home/whoisheremoron/gamesneeze/build/CMakeFiles/rebuild_cache.dir

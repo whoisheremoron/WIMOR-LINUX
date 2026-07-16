@@ -135,6 +135,11 @@ void Menu::drawVisualsTab() {
                 ImGui::Checkbox("Forwardtrack Dots", &CONFIGBOOL("Visuals>Players>Enemies>Forwardtrack Dots"));
                 ImGui::Checkbox("Vis Check", &CONFIGBOOL("Visuals>Players>Enemies>Vis Check"));
                 ImGui::Checkbox("Only When Dead", &CONFIGBOOL("Visuals>Players>Enemies>Only When Dead"));
+                if (CONFIGBOOL("Visuals>Players>Enemies>Wall Penetration")) {
+                    ImGui::ColorEdit4("Wall Pen Color", (float*)&CONFIGCOL("Visuals>Players>Enemies>Wall Penetration Color"), ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_PickerHueWheel);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("Wall Penetration", &CONFIGBOOL("Visuals>Players>Enemies>Wall Penetration"));
 
                 drawChamsWidget("Enemies",
                     &CONFIGINT("Visuals>Players>Enemies>Chams>Visible Material"), &CONFIGCOL("Visuals>Players>Enemies>Chams>Visible Color"),
@@ -218,6 +223,9 @@ void Menu::drawVisualsTab() {
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
                 ImGui::SliderInt("##Viewmodel FOV", &CONFIGINT("Visuals>World>World>Viewmodel FOV"), 0, 130);
                 ImGui::Checkbox("Third Person", &CONFIGBOOL("Visuals>World>World>Third Person"));
+                if (CONFIGBOOL("Visuals>World>World>Third Person")) {
+                    ImGui::Checkbox("Third Person While Scoped", &CONFIGBOOL("Visuals>World>World>Third Person While Scoped"));
+                }
                 ImGui::Checkbox("No Flash", &CONFIGBOOL("Visuals>World>World>No Flash"));
                 ImGui::Text("Flash Amount");
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());

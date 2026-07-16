@@ -8,6 +8,8 @@ static constexpr auto relativeToAbsolute(std::uintptr_t address) noexcept
 
 int Hooks::SDL::PollEvent(SDL_Event* event) {
     const auto result = pollEvent(event);
+    if (Globals::unloading)
+        return result;
     if (Menu::initialised) {
         Menu::onPollEvent(event, result);
     }
@@ -16,7 +18,9 @@ int Hooks::SDL::PollEvent(SDL_Event* event) {
 }
 
 void Hooks::SDL::SwapWindow(SDL_Window* window) {
-    Menu::onSwapWindow(window);
+    if (!Globals::unloading) {
+        Menu::onSwapWindow(window);
+    }
     swapWindow(window);
 }
 

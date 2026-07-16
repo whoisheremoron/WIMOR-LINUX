@@ -96,7 +96,12 @@ namespace Features {
         void createMove(CUserCmd* cmd);
     }
     namespace RageBot {
+        inline bool autoShootActive = false;
         void createMove(CUserCmd* cmd);
+    }
+    namespace AutoWall {
+        float GetDamageAuto(Vector src, Vector dst, Player* target);
+        bool CanHit(Vector src, Vector dst, Player* target, float minDamage);
     }
     namespace AntiAim {
         inline matrix3x4_t fakeBones[128];
@@ -136,6 +141,10 @@ namespace Features {
         inline bool shouldEdgebug;
         inline bool shouldDuckNext;
         inline Vector edgebugPos;
+        inline bool hasShot = false;
+        inline Vector peekStartPos;
+        inline bool hasStartPos = false;
+        void autoPeek(CUserCmd* cmd);
         void prePredCreateMove(CUserCmd* cmd);
         void postPredCreateMove(CUserCmd* cmd);
         void edgeBugPredictor(CUserCmd* cmd);

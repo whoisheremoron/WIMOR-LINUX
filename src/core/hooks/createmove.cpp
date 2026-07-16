@@ -6,7 +6,10 @@
 
 
 bool Hooks::CreateMove::hook(void* thisptr, float flInputSampleTime, CUserCmd* cmd) {
-    original(thisptr, flInputSampleTime, cmd);
+    bool orig = original(thisptr, flInputSampleTime, cmd);
+    if (Globals::unloading)
+        return orig;
+
     if (cmd->tick_count != 0) {
         uintptr_t rbp;
         asm volatile("mov %%rbp, %0" : "=r" (rbp));

@@ -157,6 +157,33 @@ void drawPlayer(Player* p) {
 
                             if (CONFIGBOOL("Visuals>Players>Enemies>Forwardtrack Dots"))
                                 drawForwardTrack(p);
+
+                             // Wall Penetration hatching overlay visual
+                             if (CONFIGBOOL("Visuals>Players>Enemies>Wall Penetration") && Globals::localPlayer && Globals::localPlayer->health() > 0) {
+                                 // Check if player is NOT directly visible but can be penetrated/hit behind wall.
+                                 Vector localEye = Globals::localPlayer->eyePos();
+                                 Vector targetBone = p->getBonePos(8); // Head
+                                 
+                                 Trace trace;
+                                 Ray ray;
+                                 ray.Init(localEye, targetBone);
+                                 TraceFilter filter;
+                                 filter.pSkip = Globals::localPlayer;
+                                 Interfaces::trace->TraceRay(ray, (0x1 | 0x80 | 0x4000 | 0x2000), &filter, &trace);
+
+                                 if (trace.m_pEntityHit != p && trace.fraction < 0.99f) {
+                                     // The target is behind a wall. Let's see if we can penetrate/hit behind it.
+                                     // (We verify this wall is thin enough by checking if the trace fraction is high enough, e.g. fraction > 0.40)
+                                     if (trace.fraction >= 0.40f) {
+                                         // Draw hatched lines inside the 2D bounding box
+                                         ImColor hatchColor = CONFIGCOL("Visuals>Players>Enemies>Wall Penetration Color");
+                                         int step = 6;
+                                         for (int ly = y + step; ly < y2; ly += step) {
+                                             Globals::drawList->AddLine(ImVec2(x, ly), ImVec2(x2, ly), hatchColor, 1.0f);
+                                         }
+                                     }
+                                 }
+                             }
                         }
                     }
                 }

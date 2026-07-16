@@ -2,6 +2,8 @@
 #include <string.h>
 #include <link.h>
 #include <vector>
+#include <string>
+
 
 enum logLevel {
     LOG,

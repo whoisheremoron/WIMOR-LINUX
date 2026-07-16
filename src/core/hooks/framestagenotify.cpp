@@ -2,6 +2,10 @@
 #include "hooks.hpp"
 
 void Hooks::FrameStageNotify::hook(void* thisptr, FrameStage frame) {
+    if (Globals::unloading) {
+        original(thisptr, frame);
+        return;
+    }
     Globals::localPlayer = (Player*)Interfaces::entityList->GetClientEntity(Interfaces::engine->GetLocalPlayer());
     Features::ClantagChanger::frameStageNotify(frame);
     Features::SkyboxChanger::frameStageNotify(frame);

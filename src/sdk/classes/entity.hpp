@@ -68,6 +68,7 @@ public:
 	NETVAR("DT_BaseEntity", "m_Collision", collideable, ICollideable);
 	NETVAR("DT_BaseEntity", "m_iTeamNum", team, int);
 	NETVAR("DT_BaseEntity", "m_bSpotted", spotted, bool);
+	NETVAR("DT_BaseEntity", "m_nModelIndex", modelIndex, int);
 };
 
 class Player : public Entity {
@@ -92,6 +93,8 @@ public:
 	NETVAR("DT_CSPlayer", "m_bHasHelmet", helmet, bool);
 	NETVAR("DT_CSPlayer", "m_ArmorValue", armor, int);
 	NETVAR("DT_CSPlayer", "m_nSurvivalTeam", survivalTeam, int);
+	NETVAR("DT_BasePlayer", "m_hViewModel[0]", viewModel, unsigned long);
+
 
 	AnimState* animState() {
 		return *reinterpret_cast<AnimState **>((uintptr_t)
@@ -147,6 +150,8 @@ public:
 	NETVAR("DT_BaseCombatWeapon", "m_nFallbackPaintKit", paintKit, int);
 	NETVAR("DT_BaseCombatWeapon", "m_flFallbackWear", wear, float);
 	NETVAR("DT_BaseCombatWeapon", "m_nFallbackStatTrak", statTrack, int);
+	NETVAR("DT_BaseCombatWeapon", "m_flNextPrimaryAttack", nextPrimaryAttack, float);
+	NETVAR("DT_BaseCombatWeapon", "m_iClip1", clip1, int);
 
 	float GetSpread() {
 		typedef float (*Fn)(void*);

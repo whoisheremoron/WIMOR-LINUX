@@ -2,6 +2,9 @@
 #include "hooks.hpp"
 
 bool Hooks::IsHLTV::hook(void* thisptr) {
+    if (Globals::unloading) {
+        return original(thisptr);
+    }
     if (CONFIGBOOL("Misc>Misc>Misc>Force square radar")) {
         const auto returnAddress = (uintptr_t)__builtin_return_address(0);
 

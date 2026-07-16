@@ -45,6 +45,8 @@ namespace Netvar {
         {std::make_pair("DT_BaseCombatWeapon", "m_nFallbackPaintKit"), 0},
         {std::make_pair("DT_BaseCombatWeapon", "m_flFallbackWear"), 0},
         {std::make_pair("DT_BaseCombatWeapon", "m_nFallbackStatTrak"), 0},
+        {std::make_pair("DT_BaseCombatWeapon", "m_flNextPrimaryAttack"), 0},
+        {std::make_pair("DT_BaseCombatWeapon", "m_iClip1"), 0},
 
         /* Bomb */
         {std::make_pair("DT_PlantedC4", "m_flC4Blow"), 0},

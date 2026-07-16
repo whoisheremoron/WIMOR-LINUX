@@ -4,8 +4,14 @@
 
 
 void Hooks::OverrideView::hook(void* thisptr, ViewSetup* setup) {
-    if (Interfaces::engine->IsInGame() && Globals::localPlayer && Globals::localPlayer->health() > 0 && !Globals::localPlayer->scoped()) {
-        setup->fov = CONFIGINT("Visuals>World>World>FOV");
+    if (Globals::unloading) {
+        original(thisptr, setup);
+        return;
+    }
+    if (Interfaces::engine->IsInGame() && Globals::localPlayer && Globals::localPlayer->health() > 0) {
+        if (!Globals::localPlayer->scoped() || CONFIGBOOL("Visuals>World>World>Third Person While Scoped")) {
+            setup->fov = CONFIGINT("Visuals>World>World>FOV");
+        }
         // Third Person from Fuzion
         QAngle viewAngles;
         Interfaces::engine->GetViewAngles(viewAngles);

@@ -80,8 +80,10 @@ void Features::AntiAim::createMove(CUserCmd* cmd) {
                                     cmd->viewangles.y = real + (fake * 2);
                                     *Globals::sendPacket = false;
                                 } else if (*Globals::sendPacket) {
+                                    cmd->viewangles.y = real + fake;
+                                    fakeYaw = real + fake;
+                                } else {
                                     cmd->viewangles.y = real;
-                                    fakeYaw = real;
                                 }
                             }
                         }

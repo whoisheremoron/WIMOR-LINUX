@@ -7,7 +7,7 @@ float m_flOldFrametime;
 void Features::Prediction::start(CUserCmd* cmd) {
     inPrediction = true;
     if (Globals::localPlayer) {
-        *Offsets::predictionSeed = rand() & 0x7FFFFFFF;
+        *Offsets::predictionSeed = cmd->random_seed;
 
         m_flOldCurtime = Interfaces::globals->curtime;
         m_flOldFrametime = Interfaces::globals->frametime;
