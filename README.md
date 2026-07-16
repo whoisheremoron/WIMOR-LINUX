@@ -66,11 +66,8 @@ This fork focuses on bringing actual **HvH capabilities** and user experience en
 git clone https://github.com/whoisheremoron/WIMOR-LINUX.git
 cd WIMOR-LINUX
 
-# 1. Сборка чита
-mkdir -p build && cd build
-cmake -D CMAKE_BUILD_TYPE=Release ..
-make -j$(nproc --all)
-cd ..
+# 1. Сборка
+./toolbox.sh -b
 
 # 2. Инжект чита (убедись, что игра запущена!)
 chmod +x run.sh
@@ -79,6 +76,4 @@ chmod +x run.sh
 
 ## Использование `run.sh`
 Скрипт `./run.sh` автоматически копирует скомпилированную библиотеку в директорию игры (`csgo legacy/bin`) и осуществляет инжект в процесс `csgo_linux64` через GDB.
-
-*При повторном изменении кода просто перекомпилируй его с помощью `make` в папке `build` и запусти `./run.sh`.*
 
