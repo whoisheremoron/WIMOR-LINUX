@@ -1,8 +1,8 @@
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.cpp \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imconfig.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imconfig.h \
  /usr/include/c++/16.1.1/array /usr/include/c++/16.1.1/compare \
  /usr/include/c++/16.1.1/bits/version.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -54,7 +54,7 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: \
  /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -67,6 +67,6 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/glcorearb.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/GL/glcorearb.h \
  /usr/include/inttypes.h

@@ -173,34 +173,48 @@ static const std::vector<PaintKitInfo> g_skins = {
 void Menu::drawMiscTab() {
     if (ImGui::BeginTabBar("##miscTabs")) {
         if (ImGui::BeginTabItem("Misc")) {
+            ImGui::Spacing();
             ImGui::Columns(2, NULL, false);
-            ImGui::SetColumnWidth(-1, ImGui::GetWindowContentRegionWidth() * 0.62);
-            ImGui::BeginChild("Misc", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.61, ImGui::GetWindowHeight() * 0.64f), true); {
-                ImGui::Text("Misc");
+            ImGui::SetColumnWidth(-1, ImGui::GetWindowContentRegionWidth() * 0.58f);
+
+            // Left Column
+            ImGui::BeginChild("Misc", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.57f, ImGui::GetWindowHeight() * 0.55f), true); {
+                ImGui::Spacing();
+                ImGui::PushFont(fontMedium);
+                ImGui::TextColored(ImVec4(0.35f, 0.45f, 0.95f, 1.00f), "Miscellaneous Settings");
+                ImGui::PopFont();
                 ImGui::Separator();
+                ImGui::Spacing();
+
                 ImGui::Checkbox("Developer window", &devWindow);
                 ImGui::Checkbox("Disable Watermark", &CONFIGBOOL("Misc>Misc>Misc>Disable Watermark"));
                 ImGui::Checkbox("Force square radar", &CONFIGBOOL("Misc>Misc>Misc>Force square radar"));
                 ImGui::Checkbox("Rank Revealer", &CONFIGBOOL("Misc>Misc>Misc>Rank Revealer"));
-
                 ImGui::Checkbox("Spectators", &CONFIGBOOL("Misc>Misc>Misc>Spectators"));
+                
                 ImGui::Checkbox("Player List", &CONFIGBOOL("Misc>Misc>Misc>Player List"));
                 if (CONFIGBOOL("Misc>Misc>Misc>Player List")) {
-                    ImGui::SameLine();
+                    ImGui::Indent(15.f);
                     ImGui::Checkbox("Only When Menu Open", &CONFIGBOOL("Misc>Misc>Misc>Player List Only When Menu Open"));
+                    ImGui::Unindent(15.f);
                 }
+                
                 ImGui::Checkbox("Flappy Birb", &CONFIGBOOL("Misc>Misc>Misc>Flappy Birb"));
                 ImGui::Checkbox("Auto Accept", &CONFIGBOOL("Misc>Misc>Misc>Auto Accept"));
+                
                 ImGui::Checkbox("Auto Defuse", &CONFIGBOOL("Misc>Misc>Misc>Auto Defuse"));
                 if (CONFIGBOOL("Misc>Misc>Misc>Auto Defuse")) {
-                    ImGui::SameLine();
+                    ImGui::Indent(15.f);
                     ImGui::Checkbox("Latest Defuse", &CONFIGBOOL("Misc>Misc>Misc>Latest Defuse"));
+                    ImGui::Unindent(15.f);
                 }
+                
                 ImGui::Checkbox("Chat Filter Bypass", &CONFIGBOOL("Misc>Misc>Misc>Chat Filter Bypass"));
                 if (CONFIGBOOL("Misc>Misc>Misc>Use Spam")) {
+                    ImGui::Indent(15.f);
                     static bool toggled = false;
                     Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Misc>Use Spam Key"), &toggled);
-                    ImGui::SameLine();
+                    ImGui::Unindent(15.f);
                 }
                 ImGui::Checkbox("Use Spam", &CONFIGBOOL("Misc>Misc>Misc>Use Spam"));
                 ImGui::Checkbox("Disable Setting Cvars", &CONFIGBOOL("Misc>Misc>Misc>Disable Setting Cvars"));
@@ -208,9 +222,14 @@ void Menu::drawMiscTab() {
                 ImGui::EndChild();
             }
 
-            ImGui::BeginChild("Hitmarkers", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.61, ImGui::GetWindowHeight() * 0.21f), true); {
-                ImGui::Text("Hitmarkers");
+            ImGui::BeginChild("Hitmarkers", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.57f, ImGui::GetWindowHeight() * 0.28f), true); {
+                ImGui::Spacing();
+                ImGui::PushFont(fontMedium);
+                ImGui::TextColored(ImVec4(0.35f, 0.45f, 0.95f, 1.00f), "Hitmarkers & Logs");
+                ImGui::PopFont();
                 ImGui::Separator();
+                ImGui::Spacing();
+
                 ImGui::Checkbox("Hitlogs", &CONFIGBOOL("Misc>Misc>Hitmarkers>Hitlogs"));
                 ImGui::Checkbox("Hitmarkers", &CONFIGBOOL("Misc>Misc>Hitmarkers>Hitmarkers"));
                 ImGui::Checkbox("Hitsound", &CONFIGBOOL("Misc>Misc>Hitmarkers>Hitsound"));
@@ -220,36 +239,45 @@ void Menu::drawMiscTab() {
 
             ImGui::NextColumn();
 
-            ImGui::BeginChild("Config", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.31f), true); {
-                ImGui::Text("Config");
+            // Right Column
+            ImGui::BeginChild("Config", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.41f, ImGui::GetWindowHeight() * 0.50f), true); {
+                ImGui::Spacing();
+                ImGui::PushFont(fontMedium);
+                ImGui::TextColored(ImVec4(0.35f, 0.45f, 0.95f, 1.00f), "Configurations");
+                ImGui::PopFont();
                 ImGui::Separator();
+                ImGui::Spacing();
 
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
-                ImGui::ListBoxHeader("##configlist-lbox", ImVec2(0, 70));
+                ImGui::ListBoxHeader("##configlist-lbox", ImVec2(0, 130));
                 for (std::string file : Config::cfgFiles) {
-                    if (ImGui::Button(file.c_str())) {
+                    if (ImGui::Button(file.c_str(), ImVec2(ImGui::GetWindowContentRegionWidth(), 22))) {
                         strcpy(Config::configFileName, file.c_str());
                     }
                 }
                 ImGui::ListBoxFooter();
+                ImGui::Spacing();
 
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
                 ImGui::InputText("##configfile-tbox", Config::configFileName, IM_ARRAYSIZE(Config::configFileName));
-                if (ImGui::Button("Save", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.315, 0))) {
+                ImGui::Spacing();
+
+                float btnWidth = (ImGui::GetWindowContentRegionWidth() - 12.f) / 3.f;
+                if (ImGui::Button("Save", ImVec2(btnWidth, 26))) {
                     Config::save();
-                }; ImGui::SameLine();
-                if (ImGui::Button("Load", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.315, 0))) {
+                } ImGui::SameLine(0, 6.f);
+                if (ImGui::Button("Load", ImVec2(btnWidth, 26))) {
                     Config::load();
                     FULLUPDATE();
-                }; ImGui::SameLine();
-                if (ImGui::Button("Remove", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.315, 0))) {
+                } ImGui::SameLine(0, 6.f);
+                if (ImGui::Button("Remove", ImVec2(btnWidth, 26))) {
                     Config::remove();
-                };
+                }
 
                 ImGui::Spacing();
-                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.8f, 0.1f, 0.15f, 1.0f));
-                ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.9f, 0.2f, 0.25f, 1.0f));
-                ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.7f, 0.0f, 0.05f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.75f, 0.15f, 0.15f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.85f, 0.25f, 0.25f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.65f, 0.05f, 0.05f, 1.0f));
                 if (ImGui::Button("Unload Cheat", ImVec2(ImGui::GetWindowContentRegionWidth(), 30))) {
                     selfUnload();
                 }
@@ -258,94 +286,29 @@ void Menu::drawMiscTab() {
                 ImGui::EndChild();
             }
 
-            ImGui::BeginChild("Clantag", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.17f), true); {
-                ImGui::Text("Clantag");
+            ImGui::BeginChild("Clantag", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.41f, ImGui::GetWindowHeight() * 0.33f), true); {
+                ImGui::Spacing();
+                ImGui::PushFont(fontMedium);
+                ImGui::TextColored(ImVec4(0.35f, 0.45f, 0.95f, 1.00f), "Clantag Options");
+                ImGui::PopFont();
                 ImGui::Separator();
+                ImGui::Spacing();
+                
                 ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
                 ImGui::InputText("##clantag-tbox", clantag, IM_ARRAYSIZE(clantag));
+                ImGui::Spacing();
+                
                 ImGui::Checkbox("Clantag", &CONFIGBOOL("Misc>Misc>Clantag>Clantag"));
                 ImGui::Checkbox("Marquee", &CONFIGBOOL("Misc>Misc>Clantag>Clantag Marquee"));
                 ImGui::Checkbox("Bee Movie Clantag", &CONFIGBOOL("Misc>Misc>Clantag>Bee Movie Clantag"));
                 ImGui::EndChild();
             }
 
-            ImGui::BeginChild("Movement", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.39f), true); {
-                ImGui::Text("Movement");
-                ImGui::Separator();
-                ImGui::Checkbox("Auto Hop", &CONFIGBOOL("Misc>Misc>Movement>Auto Hop"));
-                ImGui::Checkbox("Humanised Bhop", &CONFIGBOOL("Misc>Misc>Movement>Humanised Bhop"));
-                if (CONFIGBOOL("Misc>Misc>Movement>Humanised Bhop")) {
-                    ImGui::Text("Bhop Hitchance");
-                    ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
-                    ImGui::SliderInt("##Bhop Hitchance", &CONFIGINT("Misc>Misc>Movement>Bhop Hitchance"), 0, 100);
-                    ImGui::Text("Bhop Max Misses");
-                    ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
-                    ImGui::SliderInt("##Bhop Max Misses", &CONFIGINT("Misc>Misc>Movement>Bhop Max Misses"), 0, 16);
-                    ImGui::Text("Bhop Max Hops Hit");
-                    ImGui::SetNextItemWidth(ImGui::GetWindowContentRegionWidth());
-                    ImGui::SliderInt("##Bhop Max Hops Hit", &CONFIGINT("Misc>Misc>Movement>Bhop Max Hops Hit"), 0, 16);
-                }
-                if (CONFIGBOOL("Misc>Misc>Movement>Edge Jump")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>Edge Jump Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("Edge Jump", &CONFIGBOOL("Misc>Misc>Movement>Edge Jump"));
-                if (CONFIGBOOL("Misc>Misc>Movement>JumpBug")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>JumpBug Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("JumpBug", &CONFIGBOOL("Misc>Misc>Movement>JumpBug"));
-                if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>EdgeBug Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("EdgeBug", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug"));
-                if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug")) {
-                    ImGui::Checkbox("EdgeBug Highlight", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight"));
-                    if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight")) {
-                        ImGui::SameLine();
-                        ImGui::Checkbox("Always Show", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Highlight Always"));
-                    }
-                    ImGui::Checkbox("EdgeBug Finder", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug Finder"));
-                }
-                ImGui::Checkbox("Fast Duck", &CONFIGBOOL("Misc>Misc>Movement>Fast Duck"));
-                ImGui::SameLine();
-                ImGui::TextDisabled("?");
-                if (ImGui::IsItemHovered())
-                    ImGui::SetTooltip("May cause untrusted, use at own risk!");
-                
-                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("Auto Strafe", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe"));
-
-                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Right")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Right Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Right Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("Auto Strafe Right (Sideways)", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Right"));
-
-                if (CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Left")) {
-                    static bool toggled = false;
-                    Menu::CustomWidgets::drawKeyBinder("Left Key", &CONFIGINT("Misc>Misc>Movement>Auto Strafe Left Key"), &toggled);
-                    ImGui::SameLine();
-                }
-                ImGui::Checkbox("Auto Strafe Left (Sideways)", &CONFIGBOOL("Misc>Misc>Movement>Auto Strafe Left"));
-
-                ImGui::Checkbox("Auto Counter-Strafe", &CONFIGBOOL("Misc>Misc>Movement>Fast Stop"));
-                ImGui::Checkbox("Speed Indicator", &CONFIGBOOL("Misc>Misc>Movement>Speed Indicator"));
-                ImGui::EndChild();
-            }
             ImGui::Columns(1);
+            ImGui::Spacing();
             ImGui::TextDisabled("Credits!");
             if (ImGui::IsItemHovered())
-                ImGui::SetTooltip("sekc (of course)\nAll other contributors on GitHub (xXx-sans-xXx, luk1337, cristeigabriel, crazily, dave (@dweee), keenan, u2ooS, tango1337, nigma1337, vampur, allbombson, jovvik, and any other contributors)\nDonators:\n moke#9091/github.com/mokeWe - 0.19XMR (~$30)\n hx#5185 - 0.2XMR (~$30)\nand ocornut for his great ImGui UI framework");
+                ImGui::SetTooltip("sekc (of course)\nwhoisheremoron\nAll other contributors on GitHub (xXx-sans-xXx, luk1337, cristeigabriel, crazily, dave (@dweee), keenan, u2ooS, tango1337, nigma1337, vampur, allbombson, jovvik, and any other contributors)");
             ImGui::EndTabItem();
         }
 

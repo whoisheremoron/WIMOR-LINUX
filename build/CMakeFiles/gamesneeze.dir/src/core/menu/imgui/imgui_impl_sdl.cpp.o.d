@@ -1,8 +1,8 @@
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.cpp \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imconfig.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imconfig.h \
  /usr/include/c++/16.1.1/array /usr/include/c++/16.1.1/compare \
  /usr/include/c++/16.1.1/bits/version.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -54,7 +54,7 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: \
  /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \

@@ -1,7 +1,7 @@
 CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/sdk/netvars.cpp \
+ /home/whoisheremoron/wimor/src/sdk/netvars.cpp \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../includes.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../includes.hpp \
  /usr/include/c++/16.1.1/iostream \
  /usr/include/c++/16.1.1/bits/requires_hosted.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -342,22 +342,22 @@ CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/imgui.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/imconfig.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/imgui.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/imconfig.h \
  /usr/include/c++/16.1.1/array /usr/include/assert.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/GL/gl3w.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/GL/glcorearb.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/imgui_impl_sdl.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/imgui/imgui_impl_opengl3.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/config.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/../../sdk/definitions.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/../../sdk/classes/vector.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/GL/gl3w.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/GL/glcorearb.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/imgui_impl_sdl.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/imgui/imgui_impl_opengl3.h \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/config.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/../../sdk/definitions.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/../../sdk/classes/vector.h \
  /usr/include/c++/16.1.1/map /usr/include/c++/16.1.1/bits/stl_tree.h \
  /usr/include/c++/16.1.1/ext/aligned_buffer.h \
  /usr/include/c++/16.1.1/bits/node_handle.h \
  /usr/include/c++/16.1.1/bits/stl_map.h \
  /usr/include/c++/16.1.1/bits/stl_multimap.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/../../utils/utils.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/../../utils/utils.hpp \
  /usr/include/link.h /usr/include/elf.h /usr/include/bits/elfclass.h \
  /usr/include/bits/link.h /usr/include/bits/link_lavcurrent.h \
  /usr/include/c++/16.1.1/vector \
@@ -406,33 +406,33 @@ CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: \
  /usr/include/c++/16.1.1/utility \
  /usr/include/c++/16.1.1/bits/stl_relops.h \
  /usr/include/c++/16.1.1/bits/intcmp.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/sdk.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/interfaces.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ibaseclientdll.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ivengineclient.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ipanel.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/icliententitylist.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ienginevgui.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ivmodelrender.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/imaterialsystem.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ivmodelinfo.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ienginesound.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/ienginetrace.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/../classes/entity.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/../classes/../netvars.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/../classes/../interfaces/iprediction.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/../classes/../interfaces/iclientmode.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/sdk.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/interfaces.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ibaseclientdll.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ivengineclient.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ipanel.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/icliententitylist.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ienginevgui.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ivmodelrender.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/imaterialsystem.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ivmodelinfo.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ienginesound.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/ienginetrace.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/../classes/entity.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/../classes/../netvars.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/../classes/../interfaces/iprediction.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/../classes/../interfaces/iclientmode.hpp \
  /usr/include/c++/16.1.1/functional \
  /usr/include/c++/16.1.1/bits/std_function.h \
  /usr/include/c++/16.1.1/bits/binders.h \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/input.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/igameevent.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/playerResource.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/icvar.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/globalvars.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/interfaces/iviewrenderbeams.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/classes/keyvalues.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../sdk/math.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/features/features.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/hooks/hooks.hpp \
- /home/whoisheremoron/gamesneeze/src/sdk/../core/menu/menu.hpp
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/input.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/igameevent.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/playerResource.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/icvar.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/globalvars.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/interfaces/iviewrenderbeams.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/classes/keyvalues.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../sdk/math.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/features/features.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/hooks/hooks.hpp \
+ /home/whoisheremoron/wimor/src/sdk/../core/menu/menu.hpp

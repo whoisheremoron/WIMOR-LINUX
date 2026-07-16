@@ -4,69 +4,67 @@
 
 void style() {
     ImVec4* colors = ImGui::GetStyle().Colors;
-    colors[ImGuiCol_Text]                   = ImVec4(1.00f, 1.00f, 1.00f, 1.00f);
-    colors[ImGuiCol_TextDisabled]           = ImVec4(0.50f, 0.50f, 0.50f, 1.00f);
-    colors[ImGuiCol_WindowBg]               = ImVec4(0.06f, 0.06f, 0.06f, 1.00f);
-    colors[ImGuiCol_ChildBg]                = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
-    colors[ImGuiCol_PopupBg]                = ImVec4(0.08f, 0.08f, 0.08f, 0.94f);
-    colors[ImGuiCol_Border]                 = ImVec4(0.24f, 0.24f, 0.24f, 0.50f);
-    colors[ImGuiCol_BorderShadow]           = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
-    // #190191 is RGB (25, 1, 145), floats: (0.098f, 0.004f, 0.569f)
-    colors[ImGuiCol_FrameBg]                = ImVec4(0.098f, 0.004f, 0.569f, 0.62f);
-    colors[ImGuiCol_FrameBgHovered]         = ImVec4(0.150f, 0.050f, 0.700f, 0.40f);
-    colors[ImGuiCol_FrameBgActive]          = ImVec4(0.200f, 0.100f, 0.850f, 0.67f);
-    colors[ImGuiCol_TitleBg]                = ImVec4(0.04f, 0.04f, 0.04f, 1.00f);
-    colors[ImGuiCol_TitleBgActive]          = ImVec4(0.16f, 0.29f, 0.48f, 1.00f);
-    colors[ImGuiCol_TitleBgCollapsed]       = ImVec4(0.00f, 0.00f, 0.00f, 0.51f);
-    colors[ImGuiCol_MenuBarBg]              = ImVec4(0.14f, 0.14f, 0.14f, 1.00f);
-    colors[ImGuiCol_ScrollbarBg]            = ImVec4(0.02f, 0.02f, 0.02f, 0.53f);
-    colors[ImGuiCol_ScrollbarGrab]          = ImVec4(0.39f, 0.39f, 0.39f, 1.00f);
-    colors[ImGuiCol_ScrollbarGrabHovered]   = ImVec4(0.49f, 0.49f, 0.49f, 1.00f);
-    colors[ImGuiCol_ScrollbarGrabActive]    = ImVec4(0.67f, 0.67f, 0.67f, 1.00f);
-    colors[ImGuiCol_CheckMark]              = ImVec4(1.00f, 1.00f, 1.00f, 1.00f);
-    colors[ImGuiCol_SliderGrab]             = ImVec4(0.46f, 0.46f, 0.46f, 1.00f);
-    colors[ImGuiCol_SliderGrabActive]       = ImVec4(0.70f, 0.70f, 0.70f, 1.00f);
-    colors[ImGuiCol_Button]                 = ImVec4(0.098f, 0.004f, 0.569f, 0.62f);
-    colors[ImGuiCol_ButtonHovered]          = ImVec4(0.150f, 0.050f, 0.700f, 0.40f);
-    colors[ImGuiCol_ButtonActive]           = ImVec4(0.200f, 0.100f, 0.850f, 0.40f);
-    colors[ImGuiCol_Header]                 = ImVec4(0.098f, 0.004f, 0.569f, 0.31f);
-    colors[ImGuiCol_HeaderHovered]          = ImVec4(0.098f, 0.004f, 0.569f, 0.80f);
-    colors[ImGuiCol_HeaderActive]           = ImVec4(0.098f, 0.004f, 0.569f, 1.00f);
-    colors[ImGuiCol_Separator]              = ImVec4(0.43f, 0.43f, 0.50f, 0.50f);
-    colors[ImGuiCol_SeparatorHovered]       = ImVec4(0.10f, 0.40f, 0.75f, 0.78f);
-    colors[ImGuiCol_SeparatorActive]        = ImVec4(0.10f, 0.40f, 0.75f, 1.00f);
-    colors[ImGuiCol_ResizeGrip]             = ImVec4(0.098f, 0.004f, 0.569f, 0.25f);
-    colors[ImGuiCol_ResizeGripHovered]      = ImVec4(0.098f, 0.004f, 0.569f, 0.67f);
-    colors[ImGuiCol_ResizeGripActive]       = ImVec4(0.098f, 0.004f, 0.569f, 0.95f);
-    colors[ImGuiCol_Tab]                    = ImVec4(0.098f, 0.004f, 0.569f, 0.62f);
-    colors[ImGuiCol_TabHovered]             = ImVec4(0.150f, 0.050f, 0.700f, 0.62f);
-    colors[ImGuiCol_TabActive]              = ImVec4(0.200f, 0.100f, 0.850f, 0.62f);
-    colors[ImGuiCol_TabUnfocused]           = ImVec4(0.07f, 0.10f, 0.15f, 0.97f);
-    colors[ImGuiCol_TabUnfocusedActive]     = ImVec4(0.14f, 0.26f, 0.42f, 1.00f);
-    colors[ImGuiCol_PlotLines]              = ImVec4(0.61f, 0.61f, 0.61f, 1.00f);
-    colors[ImGuiCol_PlotLinesHovered]       = ImVec4(1.00f, 0.43f, 0.35f, 1.00f);
-    colors[ImGuiCol_PlotHistogram]          = ImVec4(0.90f, 0.70f, 0.00f, 1.00f);
-    colors[ImGuiCol_PlotHistogramHovered]   = ImVec4(1.00f, 0.60f, 0.00f, 1.00f);
-    colors[ImGuiCol_TextSelectedBg]         = ImVec4(0.098f, 0.004f, 0.569f, 0.35f);
-    colors[ImGuiCol_DragDropTarget]         = ImVec4(1.00f, 1.00f, 0.00f, 0.90f);
-    colors[ImGuiCol_NavHighlight]           = ImVec4(0.098f, 0.004f, 0.569f, 1.00f);
-    colors[ImGuiCol_NavWindowingHighlight]  = ImVec4(1.00f, 1.00f, 1.00f, 0.70f);
-    colors[ImGuiCol_NavWindowingDimBg]      = ImVec4(0.80f, 0.80f, 0.80f, 0.20f);
-    colors[ImGuiCol_ModalWindowDimBg]       = ImVec4(0.80f, 0.80f, 0.80f, 0.35f);
-    colors[ImGuiCol_Header]                 = ImVec4(0.098f, 0.004f, 0.569f, 0.62f);
+    
+    // Core Backgrounds
+    colors[ImGuiCol_WindowBg]               = ImVec4(0.045f, 0.045f, 0.065f, 1.00f); // Deep dark blue-grey
+    colors[ImGuiCol_ChildBg]                = ImVec4(0.075f, 0.075f, 0.105f, 1.00f); // Slightly lighter for card styling
+    colors[ImGuiCol_PopupBg]                = ImVec4(0.075f, 0.075f, 0.105f, 0.96f);
+    
+    // Borders & Shadows
+    colors[ImGuiCol_Border]                 = ImVec4(0.140f, 0.140f, 0.190f, 0.65f); // Soft blue-grey border
+    colors[ImGuiCol_BorderShadow]           = ImVec4(0.000f, 0.000f, 0.000f, 0.00f);
+    
+    // Text
+    colors[ImGuiCol_Text]                   = ImVec4(0.950f, 0.950f, 0.980f, 1.00f);
+    colors[ImGuiCol_TextDisabled]           = ImVec4(0.500f, 0.500f, 0.600f, 1.00f);
+    
+    // Headers & Navigation
+    colors[ImGuiCol_Header]                 = ImVec4(0.120f, 0.120f, 0.220f, 0.50f);
+    colors[ImGuiCol_HeaderHovered]          = ImVec4(0.160f, 0.160f, 0.320f, 0.80f);
+    colors[ImGuiCol_HeaderActive]           = ImVec4(0.200f, 0.200f, 0.450f, 1.00f);
 
+    // Frame Elements (Checkboxes, Inputs, Sliders)
+    colors[ImGuiCol_FrameBg]                = ImVec4(0.110f, 0.110f, 0.160f, 1.00f); // Clean input field bg
+    colors[ImGuiCol_FrameBgHovered]         = ImVec4(0.150f, 0.150f, 0.240f, 1.00f);
+    colors[ImGuiCol_FrameBgActive]          = ImVec4(0.180f, 0.180f, 0.300f, 1.00f);
+    
+    // Buttons
+    colors[ImGuiCol_Button]                 = ImVec4(0.120f, 0.120f, 0.200f, 0.80f);
+    colors[ImGuiCol_ButtonHovered]          = ImVec4(0.180f, 0.180f, 0.320f, 1.00f);
+    colors[ImGuiCol_ButtonActive]           = ImVec4(0.250f, 0.250f, 0.450f, 1.00f);
+    
+    // Active Highlights (Checkmarks, Sliders, Tabs)
+    colors[ImGuiCol_CheckMark]              = ImVec4(0.350f, 0.450f, 0.950f, 1.00f); // Soft bright blue
+    colors[ImGuiCol_SliderGrab]             = ImVec4(0.350f, 0.450f, 0.950f, 0.90f);
+    colors[ImGuiCol_SliderGrabActive]       = ImVec4(0.450f, 0.550f, 1.00f, 1.00f);
+    
+    colors[ImGuiCol_Tab]                    = ImVec4(0.110f, 0.110f, 0.200f, 0.60f);
+    colors[ImGuiCol_TabHovered]             = ImVec4(0.180f, 0.180f, 0.320f, 0.80f);
+    colors[ImGuiCol_TabActive]              = ImVec4(0.250f, 0.250f, 0.450f, 1.00f);
+    
+    colors[ImGuiCol_Separator]              = ImVec4(0.140f, 0.140f, 0.190f, 0.65f);
+    colors[ImGuiCol_SeparatorHovered]       = ImVec4(0.350f, 0.450f, 0.950f, 0.80f);
+    colors[ImGuiCol_SeparatorActive]        = ImVec4(0.350f, 0.450f, 0.950f, 1.00f);
 
-
-    ImGui::GetStyle().ScrollbarSize = 8;
-    ImGui::GetStyle().ScrollbarRounding = 0;
-    ImGui::GetStyle().WindowRounding = 6;
-    ImGui::GetStyle().ChildRounding = 3;
-    ImGui::GetStyle().FrameRounding = 4;
-    ImGui::GetStyle().TabRounding = 2;
+    // Style Properties
+    ImGuiStyle& style = ImGui::GetStyle();
+    style.WindowRounding = 10.f;
+    style.ChildRounding = 8.f;
+    style.FrameRounding = 6.f;
+    style.PopupRounding = 8.f;
+    style.ScrollbarRounding = 12.f;
+    style.GrabRounding = 6.f;
+    style.TabRounding = 6.f;
+    
+    style.WindowPadding = ImVec2(12.f, 12.f);
+    style.FramePadding = ImVec2(10.f, 6.f);
+    style.ItemSpacing = ImVec2(8.f, 12.f);
+    style.ItemInnerSpacing = ImVec2(8.f, 8.f);
+    style.ScrollbarSize = 6.f;
 }
 
 void Menu::onPollEvent(SDL_Event* event, const int result) {
-    if (result && ImGui_ImplSDL2_ProcessEvent(event) && Menu::open) {
+    if (result && ImGui_ImplSDL2_ProcessEvent(event) && Menu::open && Menu::introState == Menu::INTRO_DONE) {
         event->type = 0;
     }
 }
@@ -80,8 +78,22 @@ void Menu::onSwapWindow(SDL_Window* window) {
         ImGui_ImplOpenGL3_Init("#version 100");
         ImGui_ImplSDL2_InitForOpenGL(window, nullptr);
         style();
-        ImGui::GetIO().Fonts->AddFontFromMemoryCompressedTTF(Roboto_compressed_data, Roboto_compressed_size, 14.f);
+        
+        fontDefault = ImGui::GetIO().Fonts->AddFontFromMemoryCompressedTTF(Roboto_compressed_data, Roboto_compressed_size, 14.f);
+        fontMedium = ImGui::GetIO().Fonts->AddFontFromMemoryCompressedTTF(Roboto_compressed_data, Roboto_compressed_size, 18.f);
+        fontLarge = ImGui::GetIO().Fonts->AddFontFromMemoryCompressedTTF(Roboto_compressed_data, Roboto_compressed_size, 72.f);
+        
         initialised = true;
+        
+        // Start the intro animation
+        introState = INTRO_WAITING;
+        introTimer = 0.0f;
+        introAlpha = 0.0f;
+        introSlide = -40.0f;
+        
+        open = false;
+        targetOpen = false;
+        menuAlpha = 0.0f;
     }
 
     ImGui_ImplOpenGL3_NewFrame();
@@ -96,9 +108,55 @@ void Menu::onSwapWindow(SDL_Window* window) {
 
     ImGui::NewFrame();
 
+    // Handle Intro state machine updates
+    float dt = io.DeltaTime;
+    if (introState != INTRO_DONE) {
+        introTimer += dt;
+        if (introState == INTRO_WAITING) {
+            if (introTimer >= 2.0f) {
+                introState = INTRO_FADE_IN;
+                introTimer = 0.0f;
+            }
+        } else if (introState == INTRO_FADE_IN) {
+            float progress = std::clamp(introTimer / 0.8f, 0.0f, 1.0f);
+            introAlpha = progress;
+            introSlide = -40.0f * (1.0f - progress); // slide up to 0.0f
+            if (introTimer >= 0.8f) {
+                introState = INTRO_HOLD;
+                introTimer = 0.0f;
+            }
+        } else if (introState == INTRO_HOLD) {
+            introAlpha = 1.0f;
+            introSlide = 0.0f;
+            if (introTimer >= 1.5f) {
+                introState = INTRO_FADE_OUT;
+                introTimer = 0.0f;
+            }
+        } else if (introState == INTRO_FADE_OUT) {
+            float progress = std::clamp(introTimer / 0.8f, 0.0f, 1.0f);
+            introAlpha = 1.0f - progress;
+            introSlide = 40.0f * progress; // slide down/away
+            if (introTimer >= 0.8f) {
+                introState = INTRO_DONE;
+                targetOpen = true; // Auto open menu after intro
+            }
+        }
+    }
+
+    // Handle smooth menu open/close fade
+    if (introState == INTRO_DONE) {
+        if (targetOpen) {
+            menuAlpha = std::clamp(menuAlpha + dt * 6.0f, 0.0f, 1.0f);
+        } else {
+            menuAlpha = std::clamp(menuAlpha - dt * 6.0f, 0.0f, 1.0f);
+        }
+        open = (menuAlpha > 0.0f);
+    }
+
     Menu::drawOverlay(ImGui::GetBackgroundDrawList());
+    
     if (Menu::open) {
-        io.MouseDrawCursor = true; // TODO: find workaround at some point because ugly
+        io.MouseDrawCursor = (menuAlpha > 0.1f); // Only show cursor when menu is mostly visible
         Menu::drawMenu();
         if (devWindow) {
             drawDevWindow();
@@ -111,81 +169,119 @@ void Menu::onSwapWindow(SDL_Window* window) {
         io.MouseDrawCursor = false;
     }
 
-
-    if (ImGui::IsKeyPressed(SDL_SCANCODE_INSERT, false)) {
+    if (ImGui::IsKeyPressed(SDL_SCANCODE_INSERT, false) && Menu::introState == Menu::INTRO_DONE) {
         Config::reloadCfgList();
-        Menu::open = !Menu::open;
+        Menu::targetOpen = !Menu::targetOpen;
     }
 
     ImGui::Render();
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
-
 void Menu::drawMenu() {
-    ImGui::SetNextWindowSize(ImVec2{900, 627});
+    ImGui::PushStyleVar(ImGuiStyleVar_Alpha, menuAlpha);
+    ImGui::SetNextWindowSize(ImVec2{900, 580});
     ImGui::Begin("wimor-linux", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
-    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 4));
-    ImGui::Text("wi"); ImGui::SameLine(); ImGui::PopStyleVar();
-    if (ImGui::IsItemClicked()) {
-        system("xdg-open https://discord.gg/SCHsWHFJMb &"); //if it works it works lmao
-    }
-    if (ImGui::IsItemHovered()) {
-        ImGui::SetTooltip("Click for discord!");
-    }
-    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(530, 5));
-    ImGui::TextColored(ImColor(25, 1, 145, 255), "mor");
-    if (ImGui::IsItemClicked()) {
-        system("xdg-open https://discord.gg/SCHsWHFJMb &"); //if it works it works lmao
-    }
-    if (ImGui::IsItemHovered()) {
-        ImGui::SetTooltip("Click for discord!");
-    }
-    ImGui::SameLine();
-    ImGui::PopStyleVar();
 
-    auto bWidth = ImVec2(80, 20);
-    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(2, 5));
-
-    ImGui::GetStyle().Colors[ImGuiCol_Button] = (Menu::tabSelected == 0) ? ImVec4(0.098f, 0.004f, 0.569f, 0.62f) : ImVec4(0.05f, 0.0f, 0.35f, 0.62f);
-    if (ImGui::Button("Legit", bWidth)) {
-        Menu::tabSelected = 0;
-    } ImGui::SameLine();
-
-    ImGui::GetStyle().Colors[ImGuiCol_Button] = (Menu::tabSelected == 1) ? ImVec4(0.098f, 0.004f, 0.569f, 0.62f) : ImVec4(0.05f, 0.0f, 0.35f, 0.62f);
-    if (ImGui::Button("Rage", bWidth)) {
-        Menu::tabSelected = 1;
-    } ImGui::SameLine();
-
-    ImGui::GetStyle().Colors[ImGuiCol_Button] = (Menu::tabSelected == 2) ? ImVec4(0.098f, 0.004f, 0.569f, 0.62f) : ImVec4(0.05f, 0.0f, 0.35f, 0.62f);
-    if (ImGui::Button("Visuals", bWidth)) {
-        Menu::tabSelected = 2;
-    } ImGui::SameLine();
-
-    ImGui::GetStyle().Colors[ImGuiCol_Button] = (Menu::tabSelected == 3) ? ImVec4(0.098f, 0.004f, 0.569f, 0.62f) : ImVec4(0.05f, 0.0f, 0.35f, 0.62f);
-    if (ImGui::Button("Misc", bWidth)) {
-        Menu::tabSelected = 3;
-    }
-    ImGui::GetStyle().Colors[ImGuiCol_Button] = ImVec4(0.098f, 0.004f, 0.569f, 0.62f);
-    ImGui::PopStyleVar();
-
+    // Sidebar structure: Width 95px, floating card layout
+    ImGui::BeginChild("##Sidebar", ImVec2(95, 556), true, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
+    
+    // Draw top branding (Centered properly)
+    ImGui::Spacing();
+    ImGui::PushFont(fontMedium);
+    float textWidth = ImGui::CalcTextSize("WIMOR").x;
+    ImGui::SetCursorPosX((95.f - textWidth) * 0.5f);
+    ImGui::TextColored(ImVec4(0.35f, 0.45f, 0.95f, 1.0f), "W"); ImGui::SameLine(0, 0);
+    ImGui::TextColored(ImVec4(0.95f, 0.95f, 0.98f, 1.0f), "IMOR");
+    ImGui::PopFont();
+    
+    ImGui::Spacing();
     ImGui::Separator();
-    ImGui::Separator();
+    ImGui::Spacing();
+
+    struct SidebarItem {
+        const char* label;
+        const char* subLabel;
+        ImColor color;
+    } items[] = {
+        { "R", "Rage", ImColor(255, 60, 60) },
+        { "L", "Legit", ImColor(255, 215, 0) },
+        { "VIS", "Visuals", ImColor(51, 153, 255) },
+        { "MV", "Motion", ImColor(51, 255, 102) },
+        { "CFG", "Misc", ImColor(200, 200, 200) }
+    };
+
+    for (int i = 0; i < 5; i++) {
+        ImGui::PushID(i);
+        
+        bool isSelected = (tabSelected == i);
+        
+        // Highlight background for selected or hovered item
+        ImGui::PushStyleColor(ImGuiCol_Button, isSelected ? ImVec4(0.35f, 0.45f, 0.95f, 0.18f) : ImVec4(0,0,0,0));
+        ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.35f, 0.45f, 0.95f, 0.08f));
+        ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.35f, 0.45f, 0.95f, 0.25f));
+
+        // Floating rounded button inside sidebar (giving it 6px margin left and right)
+        ImGui::SetCursorPosX(6.0f);
+        if (ImGui::Button("##SidebarButton", ImVec2(83, 62))) {
+            tabSelected = i;
+        }
+
+        // Draw custom colored label centered inside the button area
+        ImVec2 rectMin = ImGui::GetItemRectMin();
+        ImVec2 rectMax = ImGui::GetItemRectMax();
+        ImVec2 center = ImVec2((rectMin.x + rectMax.x) * 0.5f, (rectMin.y + rectMax.y) * 0.5f);
+
+        ImDrawList* drawList = ImGui::GetWindowDrawList();
+        
+        // Selected indicator bar on left (curved neatly inside the floating button margins)
+        if (isSelected) {
+            drawList->AddRectFilled(ImVec2(rectMin.x + 3.0f, rectMin.y + 8), ImVec2(rectMin.x + 6.0f, rectMax.y - 8), items[i].color, 3.f);
+        }
+
+        // Colored icon text
+        ImGui::PushFont(fontMedium);
+        ImVec2 textSize = ImGui::CalcTextSize(items[i].label);
+        drawList->AddText(ImVec2(center.x - textSize.x * 0.5f, center.y - 12.f), items[i].color, items[i].label);
+        ImGui::PopFont();
+
+        // Sublabel text
+        ImVec2 subSize = ImGui::CalcTextSize(items[i].subLabel);
+        drawList->AddText(ImVec2(center.x - subSize.x * 0.5f, center.y + 10.f), isSelected ? ImColor(240, 240, 250, 255) : ImColor(130, 130, 150, 255), items[i].subLabel);
+
+        ImGui::PopStyleColor(3);
+        ImGui::PopID();
+        ImGui::Spacing();
+    }
+
+    ImGui::EndChild();
+
+    ImGui::SameLine(0, 12.f); // Mellow padding between sidebar and content
+
+    // Content area structure: Width 781px, Height 100% of window
+    ImGui::BeginChild("##ContentArea", ImVec2(781, 556), false);
+    ImGui::SetCursorPosY(4.f);
 
     switch(tabSelected) {
         case 0: {
-            Menu::drawLegitTab(); break;
+            Menu::drawRageTab(); break;
         }
         case 1: {
-            Menu::drawRageTab(); break;
+            Menu::drawLegitTab(); break;
         }
         case 2: {
             Menu::drawVisualsTab(); break;
         }
         case 3: {
-            Menu::drawMiscTab();break;
+            Menu::drawMovementTab(); break;
+        }
+        case 4: {
+            Menu::drawMiscTab(); break;
         }
     }
 
+    ImGui::EndChild();
+
     ImGui::End();
+    ImGui::PopStyleVar();
 }

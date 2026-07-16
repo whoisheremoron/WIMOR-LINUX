@@ -1,5 +1,5 @@
 CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/utils/patternscanning.cpp \
+ /home/whoisheremoron/wimor/src/utils/patternscanning.cpp \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -169,7 +169,7 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: \
  /usr/include/c++/16.1.1/bits/ostream.tcc \
  /usr/include/c++/16.1.1/bits/istream.tcc \
  /usr/include/c++/16.1.1/bits/sstream.tcc \
- /home/whoisheremoron/gamesneeze/src/utils/utils.hpp \
+ /home/whoisheremoron/wimor/src/utils/utils.hpp \
  /usr/include/c++/16.1.1/vector \
  /usr/include/c++/16.1.1/bits/stl_uninitialized.h \
  /usr/include/c++/16.1.1/bits/stl_vector.h \

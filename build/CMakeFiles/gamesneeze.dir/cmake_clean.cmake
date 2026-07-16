@@ -118,6 +118,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o"
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o.d"
+  "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o"
+  "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o"
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o"

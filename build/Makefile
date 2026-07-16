@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whoisheremoron/gamesneeze
+CMAKE_SOURCE_DIR = /home/whoisheremoron/wimor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whoisheremoron/gamesneeze/build
+CMAKE_BINARY_DIR = /home/whoisheremoron/wimor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whoisheremoron/gamesneeze/build/CMakeFiles /home/whoisheremoron/gamesneeze/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whoisheremoron/wimor/build/CMakeFiles /home/whoisheremoron/wimor/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whoisheremoron/gamesneeze/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whoisheremoron/wimor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1545,6 +1545,30 @@ src/core/menu/tabs/misc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.s
 .PHONY : src/core/menu/tabs/misc.cpp.s
 
+src/core/menu/tabs/movement.o: src/core/menu/tabs/movement.cpp.o
+.PHONY : src/core/menu/tabs/movement.o
+
+# target to build an object file
+src/core/menu/tabs/movement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o
+.PHONY : src/core/menu/tabs/movement.cpp.o
+
+src/core/menu/tabs/movement.i: src/core/menu/tabs/movement.cpp.i
+.PHONY : src/core/menu/tabs/movement.i
+
+# target to preprocess a source file
+src/core/menu/tabs/movement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.i
+.PHONY : src/core/menu/tabs/movement.cpp.i
+
+src/core/menu/tabs/movement.s: src/core/menu/tabs/movement.cpp.s
+.PHONY : src/core/menu/tabs/movement.s
+
+# target to generate assembly for a file
+src/core/menu/tabs/movement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.s
+.PHONY : src/core/menu/tabs/movement.cpp.s
+
 src/core/menu/tabs/rage.o: src/core/menu/tabs/rage.cpp.o
 .PHONY : src/core/menu/tabs/rage.o
 
@@ -1947,6 +1971,9 @@ help:
 	@echo "... src/core/menu/tabs/misc.o"
 	@echo "... src/core/menu/tabs/misc.i"
 	@echo "... src/core/menu/tabs/misc.s"
+	@echo "... src/core/menu/tabs/movement.o"
+	@echo "... src/core/menu/tabs/movement.i"
+	@echo "... src/core/menu/tabs/movement.s"
 	@echo "... src/core/menu/tabs/rage.o"
 	@echo "... src/core/menu/tabs/rage.i"
 	@echo "... src/core/menu/tabs/rage.s"

@@ -1,8 +1,8 @@
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o: \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.c \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/glcorearb.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/GL/glcorearb.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
  /usr/include/inttypes.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \

@@ -189,6 +189,8 @@ float Features::AutoWall::GetDamage(Vector src, Vector dst, Player* target, floa
     // Calculate direction
     Vector delta = dst - src;
     float distance = delta.Length();
+    if (distance < 0.1f)
+        return 0.0f;
     data.direction = delta / distance;
     
     // Range check
@@ -206,19 +208,33 @@ float Features::AutoWall::GetDamage(Vector src, Vector dst, Player* target, floa
         
         Interfaces::trace->TraceRay(ray, 0x4600400B, &data.filter, &data.enterTrace);
         
-        // Direct hit on target
+        // Direct hit on target entity
         if (data.enterTrace.m_pEntityHit == (Player*)target) {
             return ScaleDamage(target, data.currentDamage, armorRatio, data.enterTrace.hitgroup);
         }
         
-        // Reached destination without hitting anything solid enough to stop
+        // Ray reached destination without hitting any solid surface
         if (data.enterTrace.fraction >= 1.0f) {
-            return ScaleDamage(target, data.currentDamage, armorRatio, HITGROUP_CHEST); // default hitgroup
+            // The ray passed through to dst without colliding with the target.
+            // Do a final confirmation trace from current src directly to target
+            // to verify it's actually reachable (not behind us, etc.)
+            Ray confirmRay;
+            confirmRay.Init(data.src, dst);
+            Trace confirmTrace;
+            TraceFilter confirmFilter;
+            confirmFilter.pSkip = Globals::localPlayer;
+            Interfaces::trace->TraceRay(confirmRay, 0x4600400B, &confirmFilter, &confirmTrace);
+            
+            if (confirmTrace.m_pEntityHit == (Player*)target) {
+                return ScaleDamage(target, data.currentDamage, armorRatio, confirmTrace.hitgroup);
+            }
+            // Ray missed target completely — no damage
+            return 0.0f;
         }
         
-        // Hit something — try to penetrate
+        // Hit a wall or other entity — try to penetrate
         if (!HandleBulletPenetration(data, weaponPenetration, 1.0f)) {
-            return 0.0f; // Can't penetrate
+            return 0.0f; // Can't penetrate this surface
         }
     }
     

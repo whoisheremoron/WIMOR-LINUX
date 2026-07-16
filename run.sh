@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Пути к файлам
-SO_SOURCE="/home/whoisheremoron/gamesneeze/build/libgamesneeze.so"
+SO_SOURCE="/home/whoisheremoron/wimor/build/libgamesneeze.so"
 GAME_BIN_DIR="/home/whoisheremoron/.local/share/Steam/steamapps/common/csgo legacy/bin"
 
 # 1. Копируем свежую либу в папку игры

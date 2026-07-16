@@ -1,8 +1,8 @@
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.cpp \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imconfig.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imconfig.h \
  /usr/include/c++/16.1.1/array /usr/include/c++/16.1.1/compare \
  /usr/include/c++/16.1.1/bits/version.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -54,7 +54,7 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: \
  /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_internal.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -108,7 +108,7 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/uio_lim.h \
- /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imstb_textedit.h \
+ /home/whoisheremoron/wimor/src/core/menu/imgui/imstb_textedit.h \
  /usr/include/ctype.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \

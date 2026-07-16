@@ -1,7 +1,7 @@
 CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o: \
- /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.cpp \
+ /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp \
  /usr/include/stdc-predef.h \
- /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.hpp \
+ /home/whoisheremoron/wimor/src/core/hooks/vmt.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

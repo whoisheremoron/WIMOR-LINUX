@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whoisheremoron/gamesneeze
+CMAKE_SOURCE_DIR = /home/whoisheremoron/wimor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whoisheremoron/gamesneeze/build
+CMAKE_BINARY_DIR = /home/whoisheremoron/wimor/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gamesneeze.dir/depend.make
@@ -73,956 +73,970 @@ CMakeFiles/gamesneeze.dir/codegen:
 .PHONY : CMakeFiles/gamesneeze.dir/codegen
 
 CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/antiaim.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o: /home/whoisheremoron/wimor/src/core/features/antiaim.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/antiaim.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o -c /home/whoisheremoron/wimor/src/core/features/antiaim.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/antiaim.cpp > CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/antiaim.cpp > CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/antiaim.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/antiaim.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/autoaccept.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o: /home/whoisheremoron/wimor/src/core/features/autoaccept.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/autoaccept.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autoaccept.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/autoaccept.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/autoaccept.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/autoaccept.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/autoaccept.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/autodefuse.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o: /home/whoisheremoron/wimor/src/core/features/autodefuse.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/autodefuse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autodefuse.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/autodefuse.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/autodefuse.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/autodefuse.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/autodefuse.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/autowall.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o: /home/whoisheremoron/wimor/src/core/features/autowall.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/autowall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autowall.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/autowall.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/autowall.cpp > CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/autowall.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/autowall.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/backtrack.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o: /home/whoisheremoron/wimor/src/core/features/backtrack.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/backtrack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o -c /home/whoisheremoron/wimor/src/core/features/backtrack.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/backtrack.cpp > CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/backtrack.cpp > CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/backtrack.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/backtrack.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/bullettracers.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o: /home/whoisheremoron/wimor/src/core/features/bullettracers.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/bullettracers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o -c /home/whoisheremoron/wimor/src/core/features/bullettracers.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/bullettracers.cpp > CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/bullettracers.cpp > CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/bullettracers.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/bullettracers.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/chams.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o: /home/whoisheremoron/wimor/src/core/features/chams.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/chams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o -c /home/whoisheremoron/wimor/src/core/features/chams.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/chams.cpp > CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/chams.cpp > CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/chams.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/chams.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/clantag.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o: /home/whoisheremoron/wimor/src/core/features/clantag.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/clantag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o -c /home/whoisheremoron/wimor/src/core/features/clantag.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/clantag.cpp > CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/clantag.cpp > CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/clantag.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/clantag.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/esp.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o: /home/whoisheremoron/wimor/src/core/features/esp.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/esp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o -c /home/whoisheremoron/wimor/src/core/features/esp.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/esp.cpp > CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/esp.cpp > CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/esp.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/esp.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/fastduck.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o: /home/whoisheremoron/wimor/src/core/features/fastduck.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/fastduck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o -c /home/whoisheremoron/wimor/src/core/features/fastduck.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/fastduck.cpp > CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/fastduck.cpp > CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/fastduck.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/fastduck.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/flappybird.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o: /home/whoisheremoron/wimor/src/core/features/flappybird.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/flappybird.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o -c /home/whoisheremoron/wimor/src/core/features/flappybird.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/flappybird.cpp > CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/flappybird.cpp > CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/flappybird.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/flappybird.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/forwardtrack.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o: /home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/forwardtrack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o -c /home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/forwardtrack.cpp > CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp > CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/forwardtrack.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/hitmarkers.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o: /home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/hitmarkers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o -c /home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/hitmarkers.cpp > CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp > CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/hitmarkers.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/legitbot.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o: /home/whoisheremoron/wimor/src/core/features/legitbot.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/legitbot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/legitbot.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/legitbot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/legitbot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/legitbot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/legitbot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/movement.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o: /home/whoisheremoron/wimor/src/core/features/movement.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/movement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o -c /home/whoisheremoron/wimor/src/core/features/movement.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/movement.cpp > CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/movement.cpp > CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/movement.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/movement.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/nightmode.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o: /home/whoisheremoron/wimor/src/core/features/nightmode.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/nightmode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o -c /home/whoisheremoron/wimor/src/core/features/nightmode.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/nightmode.cpp > CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/nightmode.cpp > CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/nightmode.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/nightmode.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/noVisualRecoil.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o: /home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/noVisualRecoil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o -c /home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/noVisualRecoil.cpp > CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp > CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/noVisualRecoil.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/noflash.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o: /home/whoisheremoron/wimor/src/core/features/noflash.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/noflash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o -c /home/whoisheremoron/wimor/src/core/features/noflash.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/noflash.cpp > CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/noflash.cpp > CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/noflash.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/noflash.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/notifications.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o: /home/whoisheremoron/wimor/src/core/features/notifications.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/notifications.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o -c /home/whoisheremoron/wimor/src/core/features/notifications.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/notifications.cpp > CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/notifications.cpp > CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/notifications.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/notifications.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/playerlist.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o: /home/whoisheremoron/wimor/src/core/features/playerlist.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/playerlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o -c /home/whoisheremoron/wimor/src/core/features/playerlist.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/playerlist.cpp > CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/playerlist.cpp > CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/playerlist.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/playerlist.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/prediction.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o: /home/whoisheremoron/wimor/src/core/features/prediction.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/prediction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o -c /home/whoisheremoron/wimor/src/core/features/prediction.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/prediction.cpp > CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/prediction.cpp > CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/prediction.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/prediction.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/radar.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o: /home/whoisheremoron/wimor/src/core/features/radar.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/radar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o -c /home/whoisheremoron/wimor/src/core/features/radar.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/radar.cpp > CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/radar.cpp > CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/radar.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/radar.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/ragdollGravity.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o: /home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/ragdollGravity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o -c /home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/ragdollGravity.cpp > CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp > CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/ragdollGravity.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/ragebot.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o: /home/whoisheremoron/wimor/src/core/features/ragebot.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/ragebot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/ragebot.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/ragebot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/ragebot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/ragebot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/ragebot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/rankrevealer.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o: /home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/rankrevealer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o -c /home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/rankrevealer.cpp > CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp > CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/rankrevealer.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/recoilCrosshair.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o: /home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/recoilCrosshair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o -c /home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/recoilCrosshair.cpp > CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp > CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/recoilCrosshair.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/skinchanger.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o: /home/whoisheremoron/wimor/src/core/features/skinchanger.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/skinchanger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o -c /home/whoisheremoron/wimor/src/core/features/skinchanger.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/skinchanger.cpp > CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/skinchanger.cpp > CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/skinchanger.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/skinchanger.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/skyboxchanger.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o: /home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/skyboxchanger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o -c /home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/skyboxchanger.cpp > CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp > CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/skyboxchanger.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/slowwalk.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o: /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/slowwalk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o -c /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/slowwalk.cpp > CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp > CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/slowwalk.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/spectators.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o: /home/whoisheremoron/wimor/src/core/features/spectators.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/spectators.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o -c /home/whoisheremoron/wimor/src/core/features/spectators.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/spectators.cpp > CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/spectators.cpp > CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/spectators.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/spectators.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/triggerbot.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o: /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/triggerbot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/triggerbot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp > CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/triggerbot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/usespam.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o: /home/whoisheremoron/wimor/src/core/features/usespam.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/usespam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o -c /home/whoisheremoron/wimor/src/core/features/usespam.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/usespam.cpp > CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/usespam.cpp > CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/usespam.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/usespam.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o: /home/whoisheremoron/gamesneeze/src/core/features/worldcolormodulation.cpp
+CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o: /home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp
 CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/features/worldcolormodulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o -c /home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/features/worldcolormodulation.cpp > CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp > CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/features/worldcolormodulation.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp -o CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/clientcmd.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/clientcmd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/clientcmd.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/clientcmd.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/createmove.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/createmove.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/createmove.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/createmove.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/createmove.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/createmove.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/createmove.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/createmove.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/drawmodelexecute.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/drawmodelexecute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/drawmodelexecute.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/drawmodelexecute.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/emitsound.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/emitsound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/emitsound.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/emitsound.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/events.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/events.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/events.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/events.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/events.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/events.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/events.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/events.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/framestagenotify.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/framestagenotify.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/framestagenotify.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/framestagenotify.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/getviewmodelfov.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/getviewmodelfov.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/getviewmodelfov.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/getviewmodelfov.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/hooks.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/hooks.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/hooks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/hooks.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/hooks.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/hooks.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/hooks.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/hooks.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/ishltv.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/ishltv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/ishltv.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/ishltv.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/overrideview.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/overrideview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/overrideview.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/overrideview.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/paint.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/paint.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/paint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/paint.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/paint.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/paint.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/paint.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/paint.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/sdlhook.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/sdlhook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/sdlhook.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/sdlhook.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o: /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.cpp
+CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o: /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp
 CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp > CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/hooks/vmt.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp -o CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/customwidgets.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o: /home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/customwidgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/customwidgets.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/customwidgets.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_demo.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_demo.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_demo.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_draw.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_draw.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_draw.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_impl_sdl.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_widgets.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o: /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_widgets.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/imgui_widgets.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/menu.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o: /home/whoisheremoron/wimor/src/core/menu/menu.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/menu.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/menu.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/menu.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/menu.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/menu.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/overlay.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o: /home/whoisheremoron/wimor/src/core/menu/overlay.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/overlay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/overlay.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/overlay.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/overlay.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/overlay.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/overlay.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/tabs/devwindow.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/tabs/devwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/tabs/devwindow.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/tabs/devwindow.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/tabs/legit.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/tabs/legit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/tabs/legit.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/tabs/legit.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/tabs/misc.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/tabs/misc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/tabs/misc.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/tabs/misc.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.s
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.i
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/tabs/rage.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/tabs/rage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/tabs/rage.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/tabs/rage.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o: /home/whoisheremoron/gamesneeze/src/core/menu/tabs/visuals.cpp
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o: /home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o -c /home/whoisheremoron/gamesneeze/src/core/menu/tabs/visuals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/tabs/visuals.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp > CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/tabs/visuals.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp -o CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/main.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/main.cpp.o: /home/whoisheremoron/gamesneeze/src/main.cpp
+CMakeFiles/gamesneeze.dir/src/main.cpp.o: /home/whoisheremoron/wimor/src/main.cpp
 CMakeFiles/gamesneeze.dir/src/main.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/gamesneeze.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/main.cpp.o -MF CMakeFiles/gamesneeze.dir/src/main.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/main.cpp.o -c /home/whoisheremoron/gamesneeze/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/gamesneeze.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/main.cpp.o -MF CMakeFiles/gamesneeze.dir/src/main.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/main.cpp.o -c /home/whoisheremoron/wimor/src/main.cpp
 
 CMakeFiles/gamesneeze.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/main.cpp > CMakeFiles/gamesneeze.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/main.cpp > CMakeFiles/gamesneeze.dir/src/main.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/main.cpp -o CMakeFiles/gamesneeze.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/main.cpp -o CMakeFiles/gamesneeze.dir/src/main.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o: /home/whoisheremoron/gamesneeze/src/sdk/classes/entity.cpp
+CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o: /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp
 CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o -c /home/whoisheremoron/gamesneeze/src/sdk/classes/entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o -c /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp
 
 CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/sdk/classes/entity.cpp > CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp > CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/sdk/classes/entity.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o: /home/whoisheremoron/gamesneeze/src/sdk/interfaces/interfaces.cpp
+CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o: /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp
 CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o -c /home/whoisheremoron/gamesneeze/src/sdk/interfaces/interfaces.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o -c /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp
 
 CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/sdk/interfaces/interfaces.cpp > CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp > CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/sdk/interfaces/interfaces.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o: /home/whoisheremoron/gamesneeze/src/sdk/math.cpp
+CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o: /home/whoisheremoron/wimor/src/sdk/math.cpp
 CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o -c /home/whoisheremoron/gamesneeze/src/sdk/math.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o -c /home/whoisheremoron/wimor/src/sdk/math.cpp
 
 CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/sdk/math.cpp > CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/sdk/math.cpp > CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/sdk/math.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/sdk/math.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: /home/whoisheremoron/gamesneeze/src/sdk/netvars.cpp
+CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: /home/whoisheremoron/wimor/src/sdk/netvars.cpp
 CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o -c /home/whoisheremoron/gamesneeze/src/sdk/netvars.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o -MF CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o -c /home/whoisheremoron/wimor/src/sdk/netvars.cpp
 
 CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/sdk/netvars.cpp > CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/sdk/netvars.cpp > CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/sdk/netvars.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/sdk/netvars.cpp -o CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o: /home/whoisheremoron/gamesneeze/src/utils/log.cpp
+CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o: /home/whoisheremoron/wimor/src/utils/log.cpp
 CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o -MF CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o -c /home/whoisheremoron/gamesneeze/src/utils/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o -MF CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o -c /home/whoisheremoron/wimor/src/utils/log.cpp
 
 CMakeFiles/gamesneeze.dir/src/utils/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/utils/log.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/utils/log.cpp > CMakeFiles/gamesneeze.dir/src/utils/log.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/utils/log.cpp > CMakeFiles/gamesneeze.dir/src/utils/log.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/utils/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/utils/log.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/utils/log.cpp -o CMakeFiles/gamesneeze.dir/src/utils/log.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/utils/log.cpp -o CMakeFiles/gamesneeze.dir/src/utils/log.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/gamesneeze/src/utils/patternscanning.cpp
+CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/wimor/src/utils/patternscanning.cpp
 CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o -MF CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o -c /home/whoisheremoron/gamesneeze/src/utils/patternscanning.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o -MF CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o.d -o CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o -c /home/whoisheremoron/wimor/src/utils/patternscanning.cpp
 
 CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/gamesneeze/src/utils/patternscanning.cpp > CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whoisheremoron/wimor/src/utils/patternscanning.cpp > CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.i
 
 CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/gamesneeze/src/utils/patternscanning.cpp -o CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whoisheremoron/wimor/src/utils/patternscanning.cpp -o CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.s
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o: CMakeFiles/gamesneeze.dir/flags.make
-CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o: /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.c
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o: /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o: CMakeFiles/gamesneeze.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o -c /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o -MF CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o.d -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.c > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c > CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.i
 
 CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/whoisheremoron/gamesneeze/src/core/menu/imgui/GL/gl3w.c -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c -o CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.s
 
 # Object files for target gamesneeze
 gamesneeze_OBJECTS = \
@@ -1084,6 +1098,7 @@ gamesneeze_OBJECTS = \
 "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o" \
 "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o" \
 "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o" \
+"CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o" \
 "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o" \
 "CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o" \
 "CMakeFiles/gamesneeze.dir/src/main.cpp.o" \
@@ -1156,6 +1171,7 @@ libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o
+libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/main.cpp.o
@@ -1169,7 +1185,7 @@ libgamesneeze.so: CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/build.make
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/compiler_depend.ts
 libgamesneeze.so: CMakeFiles/gamesneeze.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whoisheremoron/gamesneeze/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX shared library libgamesneeze.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/whoisheremoron/wimor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Linking CXX shared library libgamesneeze.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamesneeze.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1181,6 +1197,6 @@ CMakeFiles/gamesneeze.dir/clean:
 .PHONY : CMakeFiles/gamesneeze.dir/clean
 
 CMakeFiles/gamesneeze.dir/depend:
-	cd /home/whoisheremoron/gamesneeze/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whoisheremoron/gamesneeze /home/whoisheremoron/gamesneeze /home/whoisheremoron/gamesneeze/build /home/whoisheremoron/gamesneeze/build /home/whoisheremoron/gamesneeze/build/CMakeFiles/gamesneeze.dir/DependInfo.cmake "--color=$(COLOR)" gamesneeze
+	cd /home/whoisheremoron/wimor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whoisheremoron/wimor /home/whoisheremoron/wimor /home/whoisheremoron/wimor/build /home/whoisheremoron/wimor/build /home/whoisheremoron/wimor/build/CMakeFiles/gamesneeze.dir/DependInfo.cmake "--color=$(COLOR)" gamesneeze
 .PHONY : CMakeFiles/gamesneeze.dir/depend
 

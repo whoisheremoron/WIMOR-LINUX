@@ -292,9 +292,9 @@ void scanForEdges() {
 
     Vector origin = Globals::localPlayer->origin();
     
-    const int directions = 36;
-    const int steps = 12;
-    const float max_radius = 1000.0f;
+    const int directions = 48;
+    const int steps = 16;
+    const float max_radius = 1200.0f;
     
     for (int d = 0; d < directions; d++) {
         float angle = (float)d * (360.0f / (float)directions);
@@ -333,10 +333,10 @@ void scanForEdges() {
                 Trace trace2;
                 Interfaces::trace->TraceRay(ray2, 0x1, &filter, &trace2);
                 
-                if (trace2.fraction == 1.0f || (groundPos.z - trace2.endpos.z) > 3.0f) {
+                if (trace2.fraction == 1.0f || (groundPos.z - trace2.endpos.z) > 2.0f) {
                     bool duplicate = false;
                     for (const auto& edge : scannedEdges) {
-                        if (getDistance(edge.pos, groundPos) < 8.0f) {
+                        if (getDistance(edge.pos, groundPos) < 5.0f) {
                             duplicate = true;
                             break;
                         }
@@ -354,7 +354,7 @@ void Features::Movement::prePredCreateMove(CUserCmd *cmd) {
     if (!Globals::localPlayer)
         return;
 
-    if (Interfaces::globals->tickcount % 15 == 0) {
+    if (Interfaces::globals->tickcount % 8 == 0) {
         scanForEdges();
     }
 
@@ -391,63 +391,80 @@ void Features::Movement::edgeBugPredictor(CUserCmd *cmd) {
     if (Globals::localPlayer->velocity().z >= 0.0f)
         return;
 
-    // --- AUTO EDGEBUG / EDGEBUG HELPER STEERING ---
+    // --- AUTO EDGEBUG / EDGEBUG HELPER STEERING (IMPROVED) ---
     Vector playerOrigin = Globals::localPlayer->origin();
-    Vector forward;
-    angleVectors(cmd->viewangles, forward);
-    forward.z = 0.0f;
-    forward.Normalize();
+    Vector playerVel = Globals::localPlayer->velocity();
+    
+    // Use velocity direction for edge selection when moving, view direction as fallback
+    Vector moveDir;
+    float speed2D = playerVel.Length2D();
+    if (speed2D > 10.0f) {
+        moveDir = Vector(playerVel.x, playerVel.y, 0.0f);
+        moveDir.Normalize();
+    } else {
+        angleVectors(cmd->viewangles, moveDir);
+        moveDir.z = 0.0f;
+        moveDir.Normalize();
+    }
 
     Vector targetLedge(0.0f, 0.0f, 0.0f);
-    float closestLedgeDist = 999999.0f;
+    float bestEdgeScore = -999999.0f;
+    bool foundEdge = false;
 
     for (const auto& edge : scannedEdges) {
         Vector vecToEdge = edge.pos - playerOrigin;
         float dist = vecToEdge.Length2D();
         
-        if (dist > 150.0f)
+        if (dist > 300.0f)
             continue;
             
-        if (edge.pos.z >= playerOrigin.z + 16.0f || edge.pos.z < playerOrigin.z - 250.0f)
+        if (edge.pos.z >= playerOrigin.z + 20.0f || edge.pos.z < playerOrigin.z - 350.0f)
             continue;
             
         Vector vecToEdge2D = vecToEdge;
         vecToEdge2D.z = 0.0f;
         vecToEdge2D.Normalize();
         
-        float dot = vecToEdge2D.Dot(forward);
-        if (dot > 0.707f) {
-            if (dist < closestLedgeDist) {
-                closestLedgeDist = dist;
+        float dot = vecToEdge2D.Dot(moveDir);
+        if (dot > 0.5f) { // ±60 degree cone
+            // Score: prefer edges that are closer AND more aligned with movement
+            float score = dot * 100.0f - dist;
+            if (score > bestEdgeScore) {
+                bestEdgeScore = score;
                 targetLedge = edge.pos;
+                foundEdge = true;
             }
         }
     }
 
-    if (closestLedgeDist < 100.0f && Globals::localPlayer->velocity().z < -50.0f) {
+    if (foundEdge && playerVel.z < -30.0f) {
         Vector edgeToPlayer = playerOrigin - targetLedge;
         edgeToPlayer.z = 0.0f;
         float distToEdge = edgeToPlayer.Length();
         
-        if (distToEdge > 0.1f) {
+        if (distToEdge > 0.05f) {
             Vector dir = edgeToPlayer / distToEdge;
-            Vector idealP = targetLedge + dir * 16.2f;
+            // Position 1 unit from edge — tight enough for consistent edgebugs
+            Vector idealP = targetLedge + dir * 1.0f;
             Vector steerVec = idealP - playerOrigin;
             steerVec.z = 0.0f;
             float steerDist = steerVec.Length();
             
-            if (steerDist > 0.5f) {
+            if (steerDist > 0.1f) {
                 steerVec.Normalize();
                 float steerYaw = RAD2DEG(atan2(steerVec.y, steerVec.x));
                 float yaw_delta = cmd->viewangles.y - steerYaw;
                 float rad = DEG2RAD(yaw_delta);
                 
-                cmd->forwardmove = cos(rad) * 450.f;
-                cmd->sidemove = -sin(rad) * 450.f;
+                // Adaptive steering: strong when far, gentle when close
+                float steerForce = std::clamp(steerDist * 15.0f, 30.0f, 450.0f);
+                
+                cmd->forwardmove = cos(rad) * steerForce;
+                cmd->sidemove = -sin(rad) * steerForce;
             }
         }
     }
-    // ----------------------------------------------
+    // --------------------------------------------------------
 
     struct MovementVars {
         QAngle viewangles;
