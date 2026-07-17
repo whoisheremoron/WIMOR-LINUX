@@ -62,6 +62,9 @@ void Menu::drawMovementTab() {
         ImGui::Separator();
         ImGui::Spacing();
 
+        ImGui::Checkbox("Pixel Surf", &CONFIGBOOL("Misc>Misc>Movement>Pixel Surf"));
+        ImGui::Spacing();
+
         ImGui::Checkbox("EdgeBug", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug"));
         if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug")) {
             ImGui::Indent(15.f);

@@ -140,6 +140,7 @@ namespace Features {
         inline Vector velBackup;
         inline bool shouldEdgebug;
         inline bool shouldDuckNext;
+        inline bool shouldPixelSurf;
         inline Vector edgebugPos;
         inline bool hasShot = false;
         inline Vector peekStartPos;
@@ -148,6 +149,7 @@ namespace Features {
         void prePredCreateMove(CUserCmd* cmd);
         void postPredCreateMove(CUserCmd* cmd);
         void edgeBugPredictor(CUserCmd* cmd);
+        void pixelSurf(CUserCmd* cmd);
         void draw();
     }
     namespace NowPlaying {

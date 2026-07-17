@@ -29,8 +29,6 @@ static void selfUnload() {
         }
         if (!handle) return;
         
-        dlclose(handle);
-        
         void* dlclose_fn = dlsym(RTLD_DEFAULT, "dlclose");
         void* pthread_exit_fn = dlsym(RTLD_DEFAULT, "pthread_exit");
         

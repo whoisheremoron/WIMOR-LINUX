@@ -7,6 +7,19 @@ struct EdgeInfo {
 };
 static std::vector<EdgeInfo> scannedEdges;
 
+struct TrailPoint {
+    Vector pos;
+    float time;
+};
+static std::vector<TrailPoint> movementTrail;
+
+struct LightningStrike {
+    Vector origin;
+    float startTime;
+    std::vector<std::vector<Vector>> branches;
+};
+static std::vector<LightningStrike> activeStrikes;
+
 
 enum StrafeMode {
     STRAFE_NORMAL = 0,
@@ -353,6 +366,130 @@ void scanForEdges() {
     }
 }
 
+void Features::Movement::pixelSurf(CUserCmd* cmd) {
+    if (!CONFIGBOOL("Misc>Misc>Movement>Pixel Surf")) {
+        shouldPixelSurf = false;
+        return;
+    }
+
+    static int ticks = 0;
+    if (!Globals::localPlayer || Globals::localPlayer->health() <= 0) {
+        ticks = 0;
+        shouldPixelSurf = false;
+        return;
+    }
+
+    if (Globals::localPlayer->moveType() == MOVETYPE_LADDER || Globals::localPlayer->moveType() == MOVETYPE_NOCLIP) {
+        shouldPixelSurf = false;
+        return;
+    }
+
+    if (Globals::localPlayer->flags() & FL_ONGROUND) {
+        shouldPixelSurf = false;
+        return;
+    }
+
+    // Don't run pixelsurf if edgebug is active/running
+    if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug") && Menu::CustomWidgets::isKeyDown(CONFIGINT("Misc>Misc>Movement>EdgeBug Key"))) {
+        shouldPixelSurf = false;
+        return;
+    }
+
+    static ConVar *sv_gravity = Interfaces::convar->FindVar("sv_gravity");
+    float targetVelo = (sv_gravity->GetFloat() * 0.5f * Interfaces::globals->interval_per_tick);
+
+    // --- AUTO PIXELSURF WALL DETECTION & STEERING ---
+    Vector origin = Globals::localPlayer->origin();
+    TraceFilter filter;
+    filter.pSkip = Globals::localPlayer;
+    
+    Vector bestNormal(0.0f, 0.0f, 0.0f);
+    float closestWall = 999.0f;
+    bool wallFound = false;
+    
+    for (int i = 0; i < 8; i++) {
+        float angle = (float)i * (360.0f / 8.0f);
+        float rad = DEG2RAD(angle);
+        Vector dir(cos(rad), sin(rad), 0.0f);
+        
+        Ray ray;
+        ray.Init(origin + Vector(0.0f, 0.0f, 32.0f), origin + Vector(0.0f, 0.0f, 32.0f) + dir * 45.0f);
+        Trace trace;
+        Interfaces::trace->TraceRay(ray, 0x1, &filter, &trace);
+        
+        if (trace.fraction < 1.0f && !trace.allsolid) {
+            float dist = trace.fraction * 45.0f;
+            if (dist < closestWall) {
+                closestWall = dist;
+                bestNormal = trace.plane.normal;
+                wallFound = true;
+            }
+        }
+    }
+
+    // Force steering into the wall to guarantee we slide against it and trigger pixelsurf prediction
+    if (wallFound && !(Globals::localPlayer->flags() & FL_ONGROUND)) {
+        Vector steerVec = Vector(-bestNormal.x, -bestNormal.y, 0.0f); // move directly into the wall
+        steerVec.Normalize();
+        
+        float steerYaw = RAD2DEG(atan2(steerVec.y, steerVec.x));
+        float yaw_delta = cmd->viewangles.y - steerYaw;
+        float rad = DEG2RAD(yaw_delta);
+        
+        cmd->forwardmove = cos(rad) * 450.f;
+        cmd->sidemove = -sin(rad) * 450.f;
+    }
+    // ------------------------------------------------
+
+    if (!shouldPixelSurf) {
+        int nCmdsPred = Interfaces::prediction->Split->nCommandsPredicted;
+        int BackupButtons = cmd->buttons;
+
+        for (int i = 0; i < 2; i++) {
+            // Restore prediction state to the last predicted frame
+            Features::Prediction::restoreEntityToPredictedFrame(nCmdsPred - 1);
+
+            if (i == 0)
+                cmd->buttons &= ~IN_DUCK;
+            else
+                cmd->buttons |= IN_DUCK;
+
+            for (int z = 0; z < 8; z++) {
+                Features::Prediction::start(cmd);
+                Features::Prediction::end();
+
+                if (Globals::localPlayer->flags() & FL_ONGROUND) {
+                    break;
+                }
+
+                float zVelo = Globals::localPlayer->velocity().z;
+                // Detect exact vertical velocity signature of a pixelsurf dynamically
+                if (velBackup.z < 10.0f && std::abs(zVelo + targetVelo) < 1.0f) {
+                    shouldPixelSurf = true;
+                    if (i == 0) {
+                        shouldPixelSurf = false;
+                        cmd->buttons = BackupButtons;
+                        return;
+                    }
+                    ticks = cmd->tick_count + z; // Predict target tick precisely without delay offset
+                    BackupButtons = cmd->buttons;
+                    Features::Notifications::addNotification(ImColor(0, 255, 255), "PixelSurf predicted at tick offset: %d", z);
+                    break;
+                }
+            }
+        }
+        cmd->buttons = BackupButtons;
+        Features::Prediction::restoreEntityToPredictedFrame(nCmdsPred - 1);
+    } else {
+        cmd->buttons |= IN_DUCK;
+        if (cmd->tick_count > ticks) {
+            if (std::abs(velBackup.z + targetVelo) > 1.0f) {
+                shouldPixelSurf = false;
+            }
+        }
+    }
+}
+
 void Features::Movement::prePredCreateMove(CUserCmd *cmd) {
     if (!Globals::localPlayer)
         return;
@@ -367,9 +504,55 @@ void Features::Movement::prePredCreateMove(CUserCmd *cmd) {
     bhop(cmd);
     autoStrafe(cmd);
     fastStop(cmd);
+    pixelSurf(cmd);
 
     if (shouldEdgebug && shouldDuckNext)
         cmd->buttons |= IN_DUCK;
+
+    // Movement Trail recording
+    if (Globals::localPlayer->health() > 0) {
+        if (CONFIGBOOL("Visuals>World>World>Movement Trail")) {
+            if (!(Globals::localPlayer->flags() & FL_ONGROUND)) {
+                movementTrail.push_back({ Globals::localPlayer->origin(), static_cast<float>(ImGui::GetTime()) });
+            }
+        }
+    } else {
+        movementTrail.clear();
+    }
+
+    float curTime = ImGui::GetTime();
+    movementTrail.erase(std::remove_if(movementTrail.begin(), movementTrail.end(), 
+        [curTime](const TrailPoint& p) { return curTime - p.time > 1.0f; }), movementTrail.end());
+
+    // PixelSurf Lightning Trigger (rising edge detection)
+    static bool wasPixelSurfing = false;
+    if (shouldPixelSurf && !wasPixelSurfing) {
+        if (CONFIGBOOL("Visuals>World>World>PixelSurf Effects")) {
+            LightningStrike strike;
+            strike.origin = Globals::localPlayer->origin();
+            strike.startTime = curTime;
+            
+            int numBranches = 4 + (rand() % 3); // 4 to 6 branches
+            for (int b = 0; b < numBranches; b++) {
+                std::vector<Vector> branch;
+                Vector current = strike.origin;
+                branch.push_back(current);
+                
+                int segments = 4 + (rand() % 3); // 4 to 6 segments per branch
+                for (int s = 0; s < segments; s++) {
+                    float offsetX = ((rand() % 200) - 100) * 0.4f; // -40 to 40
+                    float offsetY = ((rand() % 200) - 100) * 0.4f; // -40 to 40
+                    float offsetZ = 20.0f + (rand() % 40); // 20 to 60
+                    
+                    current = current + Vector(offsetX, offsetY, offsetZ);
+                    branch.push_back(current);
+                }
+                strike.branches.push_back(branch);
+            }
+            activeStrikes.push_back(strike);
+        }
+    }
+    wasPixelSurfing = shouldPixelSurf;
 }
 
 void Features::Movement::postPredCreateMove(CUserCmd *cmd) {
@@ -563,7 +746,68 @@ void Features::Movement::draw() {
         }
     }
 
+    if (Features::Movement::shouldPixelSurf) {
+        Globals::drawList->AddText(
+           ImVec2((Globals::screenSizeX / 2) - (ImGui::CalcTextSize("PixelSurf").x / 2) + 1,
+                  (Globals::screenSizeY / 2) + 51),
+           ImColor(0, 0, 0, 255), "PixelSurf");
+        Globals::drawList->AddText(
+           ImVec2((Globals::screenSizeX / 2) - (ImGui::CalcTextSize("PixelSurf").x / 2),
+                  (Globals::screenSizeY / 2) + 50),
+            ImColor(0, 255, 255, 255), "PixelSurf");
+    }
 
+    // Movement Trail rendering
+    if (CONFIGBOOL("Visuals>World>World>Movement Trail") && Globals::localPlayer) {
+        float curTime = ImGui::GetTime();
+        ImColor baseColor = CONFIGCOL("Visuals>World>World>Movement Trail Color");
+        
+        for (size_t i = 0; i + 1 < movementTrail.size(); i++) {
+            Vector p1, p2;
+            if (worldToScreen(movementTrail[i].pos, p1) && worldToScreen(movementTrail[i+1].pos, p2)) {
+                float age = curTime - movementTrail[i].time;
+                float alpha = std::clamp(1.0f - age / 1.0f, 0.0f, 1.0f);
+                if (alpha <= 0.0f) continue;
+                
+                // Draw a beautiful glowing trail
+                ImColor glowColor = ImColor(baseColor.Value.x, baseColor.Value.y, baseColor.Value.z, baseColor.Value.w * alpha * 0.35f);
+                ImColor coreColor = ImColor(255, 255, 255, (int)(alpha * 220.f));
+                
+                Globals::drawList->AddLine(ImVec2(p1.x, p1.y), ImVec2(p2.x, p2.y), glowColor, 4.0f);
+                Globals::drawList->AddLine(ImVec2(p1.x, p1.y), ImVec2(p2.x, p2.y), coreColor, 1.2f);
+            }
+        }
+    }
+
+    // PixelSurf Lightning rendering
+    if (CONFIGBOOL("Visuals>World>World>PixelSurf Effects")) {
+        float curTime = ImGui::GetTime();
+        ImColor baseColor = CONFIGCOL("Visuals>World>World>PixelSurf Effects Color");
+        
+        // Clean up expired strikes
+        activeStrikes.erase(std::remove_if(activeStrikes.begin(), activeStrikes.end(), 
+            [curTime](const LightningStrike& s) { return curTime - s.startTime > 0.40f; }), activeStrikes.end());
+            
+        for (const auto& strike : activeStrikes) {
+            float age = curTime - strike.startTime;
+            float alpha = std::clamp(1.0f - age / 0.40f, 0.0f, 1.0f);
+            if (alpha <= 0.0f) continue;
+            
+            for (const auto& branch : strike.branches) {
+                for (size_t i = 0; i + 1 < branch.size(); i++) {
+                    Vector p1, p2;
+                    if (worldToScreen(branch[i], p1) && worldToScreen(branch[i+1], p2)) {
+                        // Cyan/blue lightning glow with white hot core
+                        ImColor glowColor = ImColor(baseColor.Value.x, baseColor.Value.y, baseColor.Value.z, baseColor.Value.w * alpha * 0.7f);
+                        ImColor coreColor = ImColor(255, 255, 255, (int)(alpha * 255.f));
+                        
+                        Globals::drawList->AddLine(ImVec2(p1.x, p1.y), ImVec2(p2.x, p2.y), glowColor, 5.0f);
+                        Globals::drawList->AddLine(ImVec2(p1.x, p1.y), ImVec2(p2.x, p2.y), coreColor, 1.5f);
+                    }
+                }
+            }
+        }
+    }
 
     if (CONFIGBOOL("Misc>Misc>Movement>EdgeBug Finder") && Globals::localPlayer && Globals::localPlayer->health() > 0) {
         Vector playerOrigin = Globals::localPlayer->origin();

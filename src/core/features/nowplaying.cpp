@@ -314,7 +314,7 @@ void Features::NowPlaying::draw() {
 
   float totalWidth = discRadius * 2 + gap + textBlockWidth + panelPadX * 2;
   float panelX = (Globals::screenSizeX - totalWidth) * 0.5f;
-  float panelY = 6.0f;
+  float panelY = panelPadY;
 
   // Panel background (glassmorphism)
   ImVec2 panelMin(panelX, panelY);

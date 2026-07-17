@@ -240,6 +240,19 @@ void Menu::drawVisualsTab() {
                     ImGui::SameLine();
                     ImGui::Checkbox("Laser", &CONFIGBOOL("Visuals>World>World>Bullet Tracers Laser"));
                 }
+                ImGui::Spacing();
+
+                if (CONFIGBOOL("Visuals>World>World>Movement Trail")) {
+                    ImGui::ColorEdit4("Movement Trail Color", (float*)&CONFIGCOL("Visuals>World>World>Movement Trail Color"), ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_PickerHueWheel);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("Movement Trail", &CONFIGBOOL("Visuals>World>World>Movement Trail"));
+
+                if (CONFIGBOOL("Visuals>World>World>PixelSurf Effects")) {
+                    ImGui::ColorEdit4("PixelSurf Effects Color", (float*)&CONFIGCOL("Visuals>World>World>PixelSurf Effects Color"), ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_NoLabel | ImGuiColorEditFlags_PickerHueWheel);
+                    ImGui::SameLine();
+                }
+                ImGui::Checkbox("PixelSurf Effects (Lightning)", &CONFIGBOOL("Visuals>World>World>PixelSurf Effects"));
 
                 ImGui::Separator();
                 ImGui::Text("Fog");

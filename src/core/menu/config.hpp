@@ -320,6 +320,10 @@ inline std::unordered_map<std::string_view, ConfigItem> config{
     CONFIGITEM("Visuals>World>World>Bullet Tracers Laser", false),
     CONFIGITEM("Visuals>World>World>Bullet Tracers Color",
                ImColor(255, 255, 255, 255)),
+    CONFIGITEM("Visuals>World>World>Movement Trail", false),
+    CONFIGITEM("Visuals>World>World>Movement Trail Color", ImColor(166, 143, 242, 220)),
+    CONFIGITEM("Visuals>World>World>PixelSurf Effects", false),
+    CONFIGITEM("Visuals>World>World>PixelSurf Effects Color", ImColor(0, 255, 255, 255)),
 
     CONFIGITEM("Visuals>World>World>Override Fog", false),
     CONFIGITEM("Visuals>World>World>Fog Start", 0),
@@ -372,6 +376,7 @@ inline std::unordered_map<std::string_view, ConfigItem> config{
     CONFIGITEM("Misc>Misc>Movement>JumpBug Key", 0),
     CONFIGITEM("Misc>Misc>Movement>EdgeBug", false),
     CONFIGITEM("Misc>Misc>Movement>EdgeBug Key", 0),
+    CONFIGITEM("Misc>Misc>Movement>Pixel Surf", false),
     CONFIGITEM("Misc>Misc>Movement>Fast Duck", false),
     CONFIGITEM("Misc>Misc>Movement>Auto Strafe", false),
     CONFIGITEM("Misc>Misc>Movement>Auto Strafe Key", 0),
