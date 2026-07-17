@@ -262,9 +262,8 @@ void fastStop(CUserCmd *cmd) {
     Vector velocity = Globals::localPlayer->velocity();
     float speed = velocity.Length2D();
     
-    // Stop applying inputs when speed is negligible to avoid jitter
-    // Use 1.0 u/s threshold for maximum accuracy (weapons require near-zero velocity)
-    if (speed < 1.0f) {
+    // Stop applying inputs when speed is below 40.0 u/s to prevent walking in the opposite direction
+    if (speed < 40.0f) {
         cmd->forwardmove = 0.0f;
         cmd->sidemove = 0.0f;
         originalForwardMove = 0.0f;
@@ -280,7 +279,7 @@ void fastStop(CUserCmd *cmd) {
     float stop_speed = std::clamp(speed * 2.0f, 100.0f, 450.0f);
     
     cmd->forwardmove = -cos(rad) * stop_speed;
-    cmd->sidemove = sin(rad) * stop_speed;
+    cmd->sidemove = -sin(rad) * stop_speed;
     originalForwardMove = cmd->forwardmove;
     originalSideMove = cmd->sidemove;
 }

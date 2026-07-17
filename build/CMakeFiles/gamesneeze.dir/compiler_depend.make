@@ -34967,8 +34967,197 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
+libgamesneeze.so: /usr/lib/crti.o \
+  /usr/lib/crtn.o \
+  /usr/lib/libGL.so \
+  /usr/lib/libSDL2.so \
+  /usr/lib/libatomic.so \
+  /usr/lib/libatomic_asneeded.so \
+  /usr/lib/libc.so \
+  /usr/lib/libdbus-1.so \
+  /usr/lib/libdl.a \
+  /usr/lib/libgcc_s.so \
+  /usr/lib/libgcc_s.so.1 \
+  /usr/lib/libm.so \
+  /usr/lib/libpthread.a \
+  /usr/lib/libstdc++.so \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/libgcc.a \
+  /usr/lib/ld-linux-x86-64.so.2 \
+  /usr/lib/libc.so.6 \
+  /usr/lib/libc_nonshared.a \
+  /usr/lib/libm.so.6 \
+  /usr/lib/libmvec.so.1 \
+  CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/main.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o
+
+
+CMakeFiles/gamesneeze.dir/src/sdk/netvars.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/sdk/interfaces/interfaces.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/main.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/visuals.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/misc.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/menu.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_widgets.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_draw.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/vmt.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/paint.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/overrideview.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/getviewmodelfov.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/events.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/emitsound.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/worldcolormodulation.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/slowwalk.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/skyboxchanger.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/recoilCrosshair.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/rankrevealer.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/ragdollGravity.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/movement.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/hitmarkers.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/forwardtrack.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/flappybird.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/fastduck.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/esp.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/backtrack.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/autowall.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/autodefuse.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/antiaim.cpp.o:
+
+/usr/lib/libm.so.6:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/libgcc.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o:
+
+/usr/lib/libstdc++.so:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/lib/libgcc_s.so:
+
+/usr/lib/libdbus-1.so:
+
+/usr/lib/libatomic.so:
+
+/usr/lib/libSDL2.so:
+
+/usr/lib/libGL.so:
+
+/usr/lib/crti.o:
 
 /home/whoisheremoron/wimor/src/utils/patternscanning.cpp:
+
+CMakeFiles/gamesneeze.dir/src/utils/log.cpp.o:
 
 /home/whoisheremoron/wimor/src/utils/log.cpp:
 
@@ -34976,11 +35165,15 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /home/whoisheremoron/wimor/src/sdk/math.cpp:
 
+CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o:
+
 /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp:
 
 /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp:
 
 /home/whoisheremoron/wimor/src/main.cpp:
+
+CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o:
 
 /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp:
 
@@ -35002,6 +35195,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /home/whoisheremoron/wimor/src/core/menu/imgui/imstb_rectpack.h:
 
+CMakeFiles/gamesneeze.dir/src/core/menu/overlay.cpp.o:
+
 /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp:
 
 /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp:
@@ -35015,6 +35210,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/X11/X.h:
 
 /usr/include/GL/glxext.h:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/customwidgets.cpp.o:
 
 /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c:
 
@@ -35033,6 +35230,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /home/whoisheremoron/wimor/src/core/hooks/paint.cpp:
 
 /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp:
+
+CMakeFiles/gamesneeze.dir/src/core/features/nightmode.cpp.o:
 
 /usr/include/unistd.h:
 
@@ -35074,6 +35273,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /home/whoisheremoron/wimor/src/core/features/usespam.cpp:
 
+CMakeFiles/gamesneeze.dir/src/core/features/autoaccept.cpp.o:
+
 /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp:
 
 /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp:
@@ -35089,6 +35290,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /home/whoisheremoron/wimor/src/core/features/prediction.cpp:
 
 /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h:
+
+/usr/lib/libatomic_asneeded.so:
 
 /usr/include/dbus-1.0/dbus/dbus.h:
 
@@ -35106,9 +35309,13 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/dbus-1.0/dbus/dbus-errors.h:
 
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/movement.cpp.o:
+
 /home/whoisheremoron/wimor/src/core/hooks/events.cpp:
 
 /usr/include/dbus-1.0/dbus/dbus-bus.h:
+
+CMakeFiles/gamesneeze.dir/src/sdk/classes/entity.cpp.o:
 
 /usr/include/dbus-1.0/dbus/dbus-address.h:
 
@@ -35152,7 +35359,11 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/x86gprintrin.h:
 
+CMakeFiles/gamesneeze.dir/src/core/features/usespam.cpp.o:
+
 /usr/include/c++/16.1.1/bits/node_handle.h:
+
+/usr/lib/libm.so:
 
 /usr/include/c++/16.1.1/bits/nested_exception.h:
 
@@ -35161,6 +35372,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/c++/16.1.1/sstream:
 
 /usr/include/c++/16.1.1/bits/locale_facets.h:
+
+CMakeFiles/gamesneeze.dir/src/core/features/clantag.cpp.o:
 
 /usr/include/X11/Xutil.h:
 
@@ -35176,9 +35389,13 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/amxcomplexintrin.h:
 
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui_demo.cpp.o:
+
 /usr/include/dbus-1.0/dbus/dbus-server.h:
 
 /usr/include/c++/16.1.1/bits/intcmp.h:
+
+CMakeFiles/gamesneeze.dir/src/core/features/skinchanger.cpp.o:
 
 /usr/include/bits/confname.h:
 
@@ -35197,6 +35414,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/c++/16.1.1/bits/enable_special_members.h:
 
 /usr/include/c++/16.1.1/bits/cxxabi_init_exception.h:
+
+/usr/lib/crtn.o:
 
 /usr/include/c++/16.1.1/optional:
 
@@ -35218,15 +35437,21 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512vldqintrin.h:
 
+CMakeFiles/gamesneeze.dir/src/core/features/spectators.cpp.o:
+
 /usr/include/c++/16.1.1/bits/atomic_wait.h:
 
 /home/whoisheremoron/wimor/src/sdk/classes/keyvalues.hpp:
 
 /usr/include/c++/16.1.1/tuple:
 
+/usr/lib/libdl.a:
+
 /usr/include/c++/16.1.1/bits/atomic_timed_wait.h:
 
 /usr/include/c++/16.1.1/bits/atomic_base.h:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/imgui.cpp.o:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
@@ -35289,6 +35514,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/tbmintrin.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/lib/libc_nonshared.a:
 
 /usr/include/SDL2/SDL_atomic.h:
 
@@ -35420,6 +35647,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/SDL2/SDL_audio.h:
 
+/usr/lib/libc.so.6:
+
 /usr/include/dbus-1.0/dbus/dbus-message.h:
 
 /usr/include/bits/fp-fast.h:
@@ -35470,9 +35699,13 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/SDL2/SDL_render.h:
 
+CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o:
+
 /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /home/whoisheremoron/wimor/src/sdk/interfaces/ivengineclient.hpp:
+
+CMakeFiles/gamesneeze.dir/src/core/features/bullettracers.cpp.o:
 
 /home/whoisheremoron/wimor/src/sdk/interfaces/ipanel.hpp:
 
@@ -35508,6 +35741,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/shaintrin.h:
 
+CMakeFiles/gamesneeze.dir/src/core/hooks/sdlhook.cpp.o:
+
 /usr/include/c++/16.1.1/bits/predefined_ops.h:
 
 /usr/include/c++/16.1.1/bits/parse_numbers.h:
@@ -35518,6 +35753,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/asm-generic/bitsperlong.h:
 
+/usr/lib/libc.so:
+
 /usr/include/asm-generic/types.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512cdintrin.h:
@@ -35525,6 +35762,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/bits/types/__sigset_t.h:
 
 /home/whoisheremoron/wimor/src/includes.hpp:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/drawmodelexecute.cpp.o:
 
 /usr/include/bits/types/clockid_t.h:
 
@@ -35644,6 +35883,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/asm-generic/int-ll64.h:
 
+CMakeFiles/gamesneeze.dir/src/core/hooks/clientcmd.cpp.o:
+
 /usr/include/SDL2/SDL_haptic.h:
 
 /usr/include/c++/16.1.1/bits/locale_facets.tcc:
@@ -35726,9 +35967,13 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/amxbf16intrin.h:
 
+CMakeFiles/gamesneeze.dir/src/core/hooks/createmove.cpp.o:
+
 /usr/include/SDL2/SDL_misc.h:
 
 /usr/include/c++/16.1.1/bits/exception_ptr.h:
+
+CMakeFiles/gamesneeze.dir/src/core/features/legitbot.cpp.o:
 
 /usr/include/SDL2/SDL_mutex.h:
 
@@ -35866,6 +36111,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/math.h:
 
+CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o:
+
 /usr/include/c++/16.1.1/array:
 
 /usr/include/c++/16.1.1/bits/stl_bvector.h:
@@ -35908,6 +36155,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/c++/16.1.1/bits/stl_tempbuf.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o:
+
 /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/16.1.1/bits/stl_tree.h:
@@ -35935,6 +36184,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/c++/16.1.1/bits/uniform_int_dist.h:
 
 /usr/include/stdc-predef.h:
+
+CMakeFiles/gamesneeze.dir/src/core/features/triggerbot.cpp.o:
 
 /usr/include/c++/16.1.1/bits/unicode-data.h:
 
@@ -35992,6 +36243,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/c++/16.1.1/cstdlib:
 
+/usr/lib/libpthread.a:
+
 /usr/include/c++/16.1.1/bits/align.h:
 
 /usr/include/c++/16.1.1/cstring:
@@ -36030,13 +36283,25 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx10_2copyintrin.h:
 
+CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o:
+
 /usr/include/c++/16.1.1/fstream:
 
 /usr/include/c++/16.1.1/functional:
 
+CMakeFiles/gamesneeze.dir/src/core/hooks/framestagenotify.cpp.o:
+
 /usr/include/c++/16.1.1/initializer_list:
 
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/legit.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/ragebot.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/chams.cpp.o:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx10_2convertintrin.h:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/devwindow.cpp.o:
 
 /usr/include/c++/16.1.1/iomanip:
 
@@ -36144,6 +36409,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
 
+CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512bf16vlintrin.h:
 
 /usr/include/dlfcn.h:
@@ -36178,6 +36445,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/linux/sched/types.h:
 
+/usr/lib/libmvec.so.1:
+
 /usr/include/bits/fp-logb.h:
 
 /usr/include/linux/stddef.h:
@@ -36198,11 +36467,15 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 
 /usr/include/sys/time.h:
 
+CMakeFiles/gamesneeze.dir/src/core/hooks/ishltv.cpp.o:
+
 /usr/include/c++/16.1.1/bits/ostream_insert.h:
 
 /usr/include/sys/types.h:
 
 /usr/include/time.h:
+
+CMakeFiles/gamesneeze.dir/src/core/hooks/hooks.cpp.o:
 
 /usr/include/SDL2/SDL_platform.h:
 
@@ -36223,6 +36496,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512bf16intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512bitalgintrin.h:
+
+CMakeFiles/gamesneeze.dir/src/sdk/math.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avx512fintrin.h:
 
@@ -36275,6 +36550,8 @@ CMakeFiles/gamesneeze.dir/src/utils/patternscanning.cpp.o: /home/whoisheremoron/
 /usr/include/c++/16.1.1/unordered_map:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avxvnniint16intrin.h:
+
+CMakeFiles/gamesneeze.dir/src/core/menu/tabs/rage.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/avxvnniintrin.h:
 
