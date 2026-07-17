@@ -109,6 +109,28 @@ float Features::AutoWall::ScaleDamage(Player* target, float damage, float armorR
 }
 
 bool Features::AutoWall::HandleBulletPenetration(FireBulletData& data, float penetrationPower, float penetrationMod) {
+    // Surface flag constants
+    constexpr unsigned short SURF_NODRAW = 0x0080;
+    constexpr unsigned short SURF_SKY2D  = 0x0004;
+    constexpr unsigned short SURF_SKY    = 0x0008;
+    
+    // Never penetrate nodraw or sky surfaces
+    if (data.enterTrace.surface.flags & (SURF_NODRAW | SURF_SKY2D | SURF_SKY))
+        return false;
+    
+    // Low-penetration weapons (pistols, SMGs, shotguns with pen <= 1.0) cannot penetrate
+    // hard surfaces like concrete, metal, stone
+    if (penetrationPower <= 1.0f) {
+        const char* surfName = data.enterTrace.surface.name;
+        if (surfName) {
+            if (strstr(surfName, "concrete") || strstr(surfName, "brick") || 
+                strstr(surfName, "stone") || strstr(surfName, "rock") ||
+                strstr(surfName, "metal") || strstr(surfName, "iron") || 
+                strstr(surfName, "steel"))
+                return false;
+        }
+    }
+    
     Trace exitTrace;
     
     // Step through the wall to find the exit
@@ -118,10 +140,11 @@ bool Features::AutoWall::HandleBulletPenetration(FireBulletData& data, float pen
     
     for (float dist = 0.0f; dist < MAX_WALL_THICKNESS; dist += STEP_SIZE) {
         Vector testPoint = data.enterTrace.endpos + data.direction * (dist + STEP_SIZE);
+        Vector traceBack = data.enterTrace.endpos + data.direction * dist;
         
         // Trace backwards from the test point to find exit surface
         Ray exitRay;
-        exitRay.Init(testPoint, data.enterTrace.endpos + data.direction * dist);
+        exitRay.Init(testPoint, traceBack);
         
         Trace reverseTrace;
         // Use MASK_SHOT for the trace with correct filter
@@ -133,13 +156,16 @@ bool Features::AutoWall::HandleBulletPenetration(FireBulletData& data, float pen
             playerFilter.pSkip = reverseTrace.m_pEntityHit;
             
             Ray throughRay;
-            throughRay.Init(testPoint, data.enterTrace.endpos + data.direction * dist);
+            throughRay.Init(testPoint, traceBack);
             Interfaces::trace->TraceRay(throughRay, 0x4600400b, &playerFilter, &reverseTrace);
         }
         
         if (!reverseTrace.startsolid && reverseTrace.fraction < 1.0f) {
+            // The reverse trace hit something — this is the exit surface.
+            // The actual exit point is where the reverse trace hit, interpolated
+            // between testPoint and traceBack.
             exitTrace = reverseTrace;
-            exitTrace.endpos = testPoint;
+            exitTrace.endpos = testPoint + (traceBack - testPoint) * reverseTrace.fraction;
             foundExit = true;
             break;
         }
@@ -148,8 +174,16 @@ bool Features::AutoWall::HandleBulletPenetration(FireBulletData& data, float pen
     if (!foundExit)
         return false;
     
+    // Check exit surface flags too — cannot exit through nodraw/sky
+    if (exitTrace.surface.flags & (SURF_NODRAW | SURF_SKY2D | SURF_SKY))
+        return false;
+    
     // Calculate wall thickness
     float wallThickness = (exitTrace.endpos - data.enterTrace.endpos).Length();
+    
+    // Sanity check: if wall thickness is too small, the exit trace found garbage
+    if (wallThickness < 0.1f)
+        wallThickness = STEP_SIZE;
     
     // Get surface penetration modifier
     float enterPenMod = GetSurfacePenetrationModifier(data.enterTrace.surface.flags, data.enterTrace.surface.name);
@@ -201,6 +235,18 @@ float Features::AutoWall::GetDamage(Vector src, Vector dst, Player* target, floa
     float rangeModifier = pow(weaponRangeModifier, distance / 500.0f);
     data.currentDamage *= rangeModifier;
     
+    // First, do a direct visibility check — if we can see the target, skip penetration loop
+    {
+        Ray directRay;
+        directRay.Init(data.src, dst);
+        Trace directTrace;
+        Interfaces::trace->TraceRay(directRay, 0x4600400B, &data.filter, &directTrace);
+        
+        if (directTrace.m_pEntityHit == (Player*)target) {
+            return ScaleDamage(target, data.currentDamage, armorRatio, directTrace.hitgroup);
+        }
+    }
+    
     // Iteratively trace through walls
     while (data.penetrateCount > 0 && data.currentDamage > 0.0f) {
         Ray ray;
@@ -215,21 +261,7 @@ float Features::AutoWall::GetDamage(Vector src, Vector dst, Player* target, floa
         
         // Ray reached destination without hitting any solid surface
         if (data.enterTrace.fraction >= 1.0f) {
-            // The ray passed through to dst without colliding with the target.
-            // Do a final confirmation trace from current src directly to target
-            // to verify it's actually reachable (not behind us, etc.)
-            Ray confirmRay;
-            confirmRay.Init(data.src, dst);
-            Trace confirmTrace;
-            TraceFilter confirmFilter;
-            confirmFilter.pSkip = Globals::localPlayer;
-            Interfaces::trace->TraceRay(confirmRay, 0x4600400B, &confirmFilter, &confirmTrace);
-            
-            if (confirmTrace.m_pEntityHit == (Player*)target) {
-                return ScaleDamage(target, data.currentDamage, armorRatio, confirmTrace.hitgroup);
-            }
-            // Ray missed target completely — no damage
-            return 0.0f;
+            return 0.0f; // Ray passed through without hitting target — no damage
         }
         
         // Hit a wall or other entity — try to penetrate

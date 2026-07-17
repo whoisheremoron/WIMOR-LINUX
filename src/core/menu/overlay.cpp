@@ -36,16 +36,22 @@ void Menu::drawOverlay(ImDrawList* drawList) {
             ImGui::PushFont(fontLarge);
             std::string text = "WIMOR";
             ImVec2 textSize = ImGui::CalcTextSize(text.c_str());
+            ImVec2 wSize = ImGui::CalcTextSize("W");
             
             // Subtly glow / Shadow
             for (int i = 1; i <= 4; i++) {
-                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f - i, textPos.y - textSize.y * 0.5f - i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), text.c_str());
-                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f + i, textPos.y - textSize.y * 0.5f + i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), text.c_str());
+                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f - i, textPos.y - textSize.y * 0.5f - i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), "W");
+                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f + wSize.x - i, textPos.y - textSize.y * 0.5f - i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), "IMOR");
+                
+                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f + i, textPos.y - textSize.y * 0.5f + i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), "W");
+                drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f + wSize.x + i, textPos.y - textSize.y * 0.5f + i), ImColor(0, 0, 0, (int)(introAlpha * 100.f)), "IMOR");
             }
             
             // Fatality purple/indigo gradient simulation
             ImColor wimorColor = ImColor(25, 1, 145, (int)(introAlpha * 255.f));
-            drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f, textPos.y - textSize.y * 0.5f), wimorColor, text.c_str());
+            ImColor whiteColor = ImColor(255, 255, 255, (int)(introAlpha * 255.f));
+            drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f, textPos.y - textSize.y * 0.5f), whiteColor, "W");
+            drawList->AddText(fontLarge, 72.f, ImVec2(textPos.x - textSize.x * 0.5f + wSize.x, textPos.y - textSize.y * 0.5f), wimorColor, "IMOR");
             ImGui::PopFont();
             
             // Bar calculation

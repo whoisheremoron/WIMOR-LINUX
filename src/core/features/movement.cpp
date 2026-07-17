@@ -253,14 +253,18 @@ void fastStop(CUserCmd *cmd) {
     if (!(Globals::localPlayer->flags() & FL_ONGROUND))
         return;
 
-    if (cmd->buttons & (IN_FORWARD | IN_BACK | IN_MOVELEFT | IN_MOVERIGHT))
+    // Only skip counter-strafe if the player is actively pressing movement keys
+    // AND the movement values reflect genuine player input (not ragebot/autopeek override)
+    if ((cmd->buttons & (IN_FORWARD | IN_BACK | IN_MOVELEFT | IN_MOVERIGHT)) &&
+        (cmd->forwardmove != 0.0f || cmd->sidemove != 0.0f))
         return;
 
     Vector velocity = Globals::localPlayer->velocity();
     float speed = velocity.Length2D();
     
-    // Stop applying inputs entirely when speed is very low to avoid jitter
-    if (speed < 15.0f) {
+    // Stop applying inputs when speed is negligible to avoid jitter
+    // Use 1.0 u/s threshold for maximum accuracy (weapons require near-zero velocity)
+    if (speed < 1.0f) {
         cmd->forwardmove = 0.0f;
         cmd->sidemove = 0.0f;
         originalForwardMove = 0.0f;
