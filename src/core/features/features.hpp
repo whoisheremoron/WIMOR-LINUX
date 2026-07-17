@@ -150,4 +150,8 @@ namespace Features {
         void edgeBugPredictor(CUserCmd* cmd);
         void draw();
     }
+    namespace NowPlaying {
+        void draw();
+        void shutdown();
+    }
 }

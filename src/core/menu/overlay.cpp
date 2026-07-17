@@ -97,6 +97,8 @@ void Menu::drawOverlay(ImDrawList* drawList) {
         Globals::drawList->AddText(ImVec2(3, 20), color, autoShootText);
     }
 
+    Features::NowPlaying::draw();
+
     Features::ESP::draw();
     Features::RecoilCrosshair::draw();
     Features::Spectators::draw();

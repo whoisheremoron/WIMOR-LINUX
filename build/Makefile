@@ -585,6 +585,30 @@ src/core/features/notifications.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.s
 .PHONY : src/core/features/notifications.cpp.s
 
+src/core/features/nowplaying.o: src/core/features/nowplaying.cpp.o
+.PHONY : src/core/features/nowplaying.o
+
+# target to build an object file
+src/core/features/nowplaying.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o
+.PHONY : src/core/features/nowplaying.cpp.o
+
+src/core/features/nowplaying.i: src/core/features/nowplaying.cpp.i
+.PHONY : src/core/features/nowplaying.i
+
+# target to preprocess a source file
+src/core/features/nowplaying.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.i
+.PHONY : src/core/features/nowplaying.cpp.i
+
+src/core/features/nowplaying.s: src/core/features/nowplaying.cpp.s
+.PHONY : src/core/features/nowplaying.s
+
+# target to generate assembly for a file
+src/core/features/nowplaying.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gamesneeze.dir/build.make CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.s
+.PHONY : src/core/features/nowplaying.cpp.s
+
 src/core/features/playerlist.o: src/core/features/playerlist.cpp.o
 .PHONY : src/core/features/playerlist.o
 
@@ -1851,6 +1875,9 @@ help:
 	@echo "... src/core/features/notifications.o"
 	@echo "... src/core/features/notifications.i"
 	@echo "... src/core/features/notifications.s"
+	@echo "... src/core/features/nowplaying.o"
+	@echo "... src/core/features/nowplaying.i"
+	@echo "... src/core/features/nowplaying.s"
 	@echo "... src/core/features/playerlist.o"
 	@echo "... src/core/features/playerlist.i"
 	@echo "... src/core/features/playerlist.s"

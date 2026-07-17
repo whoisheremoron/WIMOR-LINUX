@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o.d"
   "/home/whoisheremoron/wimor/src/core/features/noflash.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o.d"
   "/home/whoisheremoron/wimor/src/core/features/notifications.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o.d"
+  "/home/whoisheremoron/wimor/src/core/features/nowplaying.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o.d"
   "/home/whoisheremoron/wimor/src/core/features/playerlist.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o.d"
   "/home/whoisheremoron/wimor/src/core/features/prediction.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o.d"
   "/home/whoisheremoron/wimor/src/core/features/radar.cpp" "CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o" "gcc" "CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o.d"

@@ -38,6 +38,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o"
   "CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o.d"
+  "CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o"
+  "CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o"
   "CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o.d"
   "CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o"

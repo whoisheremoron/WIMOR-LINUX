@@ -29,5 +29,9 @@ list(APPEND SOURCES "${CMAKE_SOURCE_DIR}/src/core/menu/imgui/GL/gl3w.c")
 include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(DBUS REQUIRED dbus-1)
+include_directories(${DBUS_INCLUDE_DIRS})
+
 add_library(gamesneeze SHARED ${SOURCES})
-target_link_libraries(gamesneeze dl pthread SDL2 GL)
+target_link_libraries(gamesneeze dl pthread SDL2 GL ${DBUS_LIBRARIES})

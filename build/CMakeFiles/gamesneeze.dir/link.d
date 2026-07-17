@@ -20,6 +20,7 @@ libgamesneeze.so: \
   CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o \
   CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o \
   CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o \
+  CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o \
   CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o \
   CMakeFiles/gamesneeze.dir/src/core/features/prediction.cpp.o \
   CMakeFiles/gamesneeze.dir/src/core/features/radar.cpp.o \
@@ -74,6 +75,7 @@ libgamesneeze.so: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libpthread.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libSDL2.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libGL.so \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libdbus-1.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libm.so \
@@ -144,6 +146,8 @@ CMakeFiles/gamesneeze.dir/src/core/features/noVisualRecoil.cpp.o:
 CMakeFiles/gamesneeze.dir/src/core/features/noflash.cpp.o:
 
 CMakeFiles/gamesneeze.dir/src/core/features/notifications.cpp.o:
+
+CMakeFiles/gamesneeze.dir/src/core/features/nowplaying.cpp.o:
 
 CMakeFiles/gamesneeze.dir/src/core/features/playerlist.cpp.o:
 
@@ -252,6 +256,8 @@ CMakeFiles/gamesneeze.dir/src/core/menu/imgui/GL/gl3w.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libSDL2.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libGL.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libdbus-1.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/libstdc++.so:
 

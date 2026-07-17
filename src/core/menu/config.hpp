@@ -409,6 +409,7 @@ inline std::unordered_map<std::string_view, ConfigItem> config{
     CONFIGITEM("Misc>Misc>Misc>Use Spam Key", 0),
     CONFIGITEM("Misc>Misc>Misc>Disable Setting Cvars", false),
     CONFIGITEM("Misc>Misc>Misc>Disable Post Processing", false),
+    CONFIGITEM("Misc>Misc>Misc>Now Playing", false),
 
     CONFIGITEM("Misc>Skins>Skins>PaintKit", 0),
     CONFIGITEM("Misc>Skins>Skins>Wear", 0),
