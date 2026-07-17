@@ -1,0 +1,17 @@
+# Build directories
+build/
+
+# Object files and libraries
+*.o
+*.so
+*.a
+*.la
+*.lo
+*.d
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

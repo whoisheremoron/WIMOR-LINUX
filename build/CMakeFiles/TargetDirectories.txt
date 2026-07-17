@@ -1,3 +1,0 @@
-/home/whoisheremoron/wimor/build/CMakeFiles/gamesneeze.dir
-/home/whoisheremoron/wimor/build/CMakeFiles/edit_cache.dir
-/home/whoisheremoron/wimor/build/CMakeFiles/rebuild_cache.dir
