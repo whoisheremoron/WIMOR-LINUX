@@ -15,11 +15,22 @@ fi
 rm -rf /tmp/dumps
 mkdir -p --mode=000 /tmp/dumps
 
+function print_logo {
+    echo -e " \n\
+\e[97m _    _ \e[38;2;25;1;145m____  ______________ \e[0m\n\
+\e[97m| |  | |\e[38;2;25;1;145m(_)  \\\\/  |  _  | ___ \\\\\e[0m\n\
+\e[97m| |  | |\e[38;2;25;1;145m|_| .  . | | | | |_/ /\e[0m\n\
+\e[97m| |/\\| |\e[38;2;25;1;145m| | | |\\\\/| | | |    / \e[0m\n\
+\e[97m\\\\  /\\\\  /\e[38;2;25;1;145m| |  | \\\\ \\\\_/ / |\\\\ \\\\ \e[0m\n\
+\e[97m \\\\/  \\\\/\e[38;2;25;1;145m|_\\\\_|  |_/\\\\___/\\\\_| \\\\_|\e[0m\n\\
+==========================================================="
+}
+
 function unload {
     echo -e "\e[97m[wm]\e[38;2;25;1;145m Unloading cheat...\e[0m"
-    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
     if grep -q "libwimor.so" "/proc/$csgo_pid/maps" 2>/dev/null; then
-        sudo $gdb -p $csgo_pid --batch \
+        # Try running GDB without sudo first (succeeds if ptrace_scope is 0)
+        $gdb -p $csgo_pid --batch \
             -ex 'set sysroot target:/' \
             -ex 'set solib-search-path target:/bin/linux64' \
             -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
@@ -28,12 +39,24 @@ function unload {
             -ex "call \$dlclose(\$library)" \
             -ex "call \$dlclose(\$library)" \
             -ex "detach" \
-            -ex "quit"
+            -ex "quit" 2>/dev/null || \
+        (echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null && \
+         sudo $gdb -p $csgo_pid --batch \
+            -ex 'set sysroot target:/' \
+            -ex 'set solib-search-path target:/bin/linux64' \
+            -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
+            -ex "set \$dlclose = (int(*)(void*)) dlclose" \
+            -ex "set \$library = \$dlopen(\"libwimor.so\", 6)" \
+            -ex "call \$dlclose(\$library)" \
+            -ex "call \$dlclose(\$library)" \
+            -ex "detach" \
+            -ex "quit")
     fi
     echo -e "\e[97m[wm]\e[38;2;25;1;145m Unloaded!\e[0m"
 }
 
 function load {
+    print_logo
     echo -e "\e[97m[wm]\e[38;2;25;1;145m Loading cheat...\e[0m"
     echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
     cp build/libwimor.so "$game_bin_dir/"
@@ -52,6 +75,7 @@ function load {
 }
 
 function load_debug {
+    print_logo
     echo -e "\e[97m[wm]\e[38;2;25;1;145m Loading cheat...\e[0m"
     echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
     cp build/libwimor.so "$game_bin_dir/"

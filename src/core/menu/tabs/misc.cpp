@@ -11,45 +11,8 @@
 #include "../../../sdk/interfaces/interfaces.hpp"
 
 static void selfUnload() {
-    Globals::unloading = true; // Instantly bypass all hooks to prevent execution during unmapping
-
-    std::thread([]() {
-        // Wait 300ms for active hook execution calls to return safely
-        std::this_thread::sleep_for(std::chrono::milliseconds(300));
-        
-        Hooks::unload();
-        Interfaces::unload();
-        
-        // Wait another 300ms for safety
-        std::this_thread::sleep_for(std::chrono::milliseconds(300));
-        
-        void* handle = dlopen("libwimor.so", RTLD_NOLOAD | RTLD_LAZY);
-        if (!handle) return;
-        
-        void* dlclose_fn = dlsym(RTLD_DEFAULT, "dlclose");
-        void* pthread_exit_fn = dlsym(RTLD_DEFAULT, "pthread_exit");
-        
-        if (!dlclose_fn || !pthread_exit_fn) return;
-
-        void* mem = mmap(NULL, 128, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-        if (mem == MAP_FAILED) return;
-
-        unsigned char stub[] = {
-            0x48, 0x89, 0xf8,       // mov %rdi, %rax
-            0x48, 0x89, 0xf7,       // mov %rsi, %rdi
-            0xff, 0xd0,             // call *%rax
-            0x48, 0x89, 0xd0,       // mov %rdx, %rax
-            0x48, 0x31, 0xff,       // xor %rdi, %rdi
-            0xff, 0xd0              // call *%rax
-        };
-        
-        memcpy(mem, stub, sizeof(stub));
-        
-        typedef void (*stub_t)(void* dlclose_fn, void* handle, void* pthread_exit_fn);
-        stub_t run_stub = (stub_t)mem;
-        
-        run_stub(dlclose_fn, handle, pthread_exit_fn);
-    }).detach();
+    Globals::unloading = true;
+    system("/home/whoisheremoron/wimor/toolbox.sh -u &");
 }
 
 struct PaintKitInfo {
