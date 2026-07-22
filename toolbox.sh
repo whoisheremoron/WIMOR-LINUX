@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gdb="gdb"
-libname="libgamemodeauto.so.0" # Pretend to be gamemode, change this to another lib that may be in /maps (if already using real gamemode, I'd suggest using libMangoHud.so)
+game_bin_dir="/home/whoisheremoron/.local/share/Steam/steamapps/common/csgo legacy/bin"
 csgo_pid=$(pidof csgo_linux64)
 
 # Set to true to compile with clang. (if changing to true, make sure to delete the build directory from gcc)
@@ -16,59 +16,55 @@ rm -rf /tmp/dumps
 mkdir -p --mode=000 /tmp/dumps
 
 function unload {
-    echo "Unloading cheat..."
-    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
-    if grep -q "$libname" "/proc/$csgo_pid/maps"; then
-        $gdb -n -q -batch -ex "attach $csgo_pid" \
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Unloading cheat...\e[0m"
+    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
+    if grep -q "libwimor.so" "/proc/$csgo_pid/maps" 2>/dev/null; then
+        sudo $gdb -p $csgo_pid --batch \
+            -ex 'set sysroot target:/' \
+            -ex 'set solib-search-path target:/bin/linux64' \
             -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
             -ex "set \$dlclose = (int(*)(void*)) dlclose" \
-            -ex "set \$library = \$dlopen(\"/usr/lib/$libname\", 6)" \
+            -ex "set \$library = \$dlopen(\"libwimor.so\", 6)" \
             -ex "call \$dlclose(\$library)" \
             -ex "call \$dlclose(\$library)" \
             -ex "detach" \
             -ex "quit"
     fi
-    echo "Unloaded!"
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Unloaded!\e[0m"
 }
 
 function load {
-    echo "Loading cheat..."
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Loading cheat...\e[0m"
     echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
-    sudo cp build/libgamesneeze.so /usr/lib/$libname
+    cp build/libwimor.so "$game_bin_dir/"
     gdbOut=$(
-      $gdb -n -q -batch \
-      -ex "set auto-load safe-path /usr/lib/" \
-      -ex "attach $csgo_pid" \
-      -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
-      -ex "call \$dlopen(\"/usr/lib/$libname\", 1)" \
-      -ex "detach" \
-      -ex "quit" 2> /dev/null
+      sudo $gdb -p $csgo_pid --batch \
+      -ex 'set sysroot target:/' \
+      -ex 'set solib-search-path target:/bin/linux64' \
+      -ex 'p (void*)dlopen("libwimor.so", 1)' 2> /dev/null
     )
     lastLine="${gdbOut##*$'\n'}"
     if [[ "$lastLine" != "\$1 = (void *) 0x0" ]]; then
-      echo "Successfully injected!"
+      echo -e "\e[97m[wm]\e[38;2;25;1;145m Successfully injected!\e[0m"
     else
       echo "Injection failed, make sure you have compiled."
     fi
 }
 
 function load_debug {
-    echo "Loading cheat..."
-    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
-    sudo cp build/libgamesneeze.so /usr/lib/$libname
-    $gdb -n -q -batch \
-        -ex "set auto-load safe-path /usr/lib:/usr/lib/" \
-        -ex "attach $csgo_pid" \
-        -ex "set \$dlopen = (void*(*)(char*, int)) dlopen" \
-        -ex "call \$dlopen(\"/usr/lib/$libname\", 1)" \
-        -ex "detach" \
-        -ex "quit"
-    $gdb -p "$csgo_pid"
-    echo "Successfully loaded!"
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Loading cheat...\e[0m"
+    echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope > /dev/null
+    cp build/libwimor.so "$game_bin_dir/"
+    sudo $gdb -p $csgo_pid --batch \
+        -ex 'set sysroot target:/' \
+        -ex 'set solib-search-path target:/bin/linux64' \
+        -ex 'p (void*)dlopen("libwimor.so", 1)'
+    sudo $gdb -p "$csgo_pid"
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Successfully loaded!\e[0m"
 }
 
 function build {
-    echo "Building cheat..."
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Building cheat...\e[0m"
     mkdir -p build
     cd build
     cmake -D CMAKE_BUILD_TYPE=Release ..
@@ -77,7 +73,7 @@ function build {
 }
 
 function build_debug {
-    echo "Building cheat..."
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Building cheat...\e[0m"
     mkdir -p build
     cd build
     cmake -D CMAKE_BUILD_TYPE=Debug ..
@@ -86,7 +82,12 @@ function build_debug {
 }
 
 function pull {
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Stashing local changes...\e[0m"
+    git stash
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Pulling latest updates...\e[0m"
     git pull
+    echo -e "\e[97m[wm]\e[38;2;25;1;145m Reapplying local changes...\e[0m"
+    git stash pop
 }
 
 while [[ $# -gt 0 ]]
@@ -120,7 +121,7 @@ case $keys in
     -h|--help)
         echo "
  help
-Toolbox script for gamesneeze the beste lincuck cheat 2021
+Toolbox script for wimor the beste lincuck cheat 2026
 =======================================================================
 | Argument             | Description                                  |
 | -------------------- | -------------------------------------------- |

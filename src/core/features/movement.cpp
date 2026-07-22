@@ -398,90 +398,108 @@ void Features::Movement::pixelSurf(CUserCmd* cmd) {
     static ConVar *sv_gravity = Interfaces::convar->FindVar("sv_gravity");
     float targetVelo = (sv_gravity->GetFloat() * 0.5f * Interfaces::globals->interval_per_tick);
 
-    // --- AUTO PIXELSURF WALL DETECTION & STEERING ---
-    Vector origin = Globals::localPlayer->origin();
-    TraceFilter filter;
-    filter.pSkip = Globals::localPlayer;
-    
-    Vector bestNormal(0.0f, 0.0f, 0.0f);
-    float closestWall = 999.0f;
-    bool wallFound = false;
-    
-    for (int i = 0; i < 8; i++) {
-        float angle = (float)i * (360.0f / 8.0f);
-        float rad = DEG2RAD(angle);
-        Vector dir(cos(rad), sin(rad), 0.0f);
+    bool locked = shouldPixelSurf && cmd->tick_count >= ticks;
+
+    // Only steer if we are not locked on the ledge yet
+    if (!locked) {
+        // --- AUTO PIXELSURF WALL DETECTION & STEERING ---
+        Vector origin = Globals::localPlayer->origin();
+        TraceFilter filter;
+        filter.pSkip = Globals::localPlayer;
         
-        Ray ray;
-        ray.Init(origin + Vector(0.0f, 0.0f, 32.0f), origin + Vector(0.0f, 0.0f, 32.0f) + dir * 45.0f);
-        Trace trace;
-        Interfaces::trace->TraceRay(ray, 0x1, &filter, &trace);
+        Vector bestNormal(0.0f, 0.0f, 0.0f);
+        float closestWall = 999.0f;
+        bool wallFound = false;
         
-        if (trace.fraction < 1.0f && !trace.allsolid) {
-            float dist = trace.fraction * 45.0f;
-            if (dist < closestWall) {
-                closestWall = dist;
-                bestNormal = trace.plane.normal;
-                wallFound = true;
+        for (int i = 0; i < 8; i++) {
+            float angle = (float)i * (360.0f / 8.0f);
+            float rad = DEG2RAD(angle);
+            Vector dir(cos(rad), sin(rad), 0.0f);
+            
+            Ray ray;
+            ray.Init(origin + Vector(0.0f, 0.0f, 32.0f), origin + Vector(0.0f, 0.0f, 32.0f) + dir * 60.0f);
+            Trace trace;
+            Interfaces::trace->TraceRay(ray, 0x1, &filter, &trace);
+            
+            if (trace.fraction < 1.0f && !trace.allsolid) {
+                // Check if the wall is vertical (pixelsurf ledges are on vertical walls/clips)
+                if (std::abs(trace.plane.normal.z) < 0.15f) {
+                    float dist = trace.fraction * 60.0f;
+                    if (dist < closestWall) {
+                        closestWall = dist;
+                        bestNormal = trace.plane.normal;
+                        wallFound = true;
+                    }
+                }
             }
         }
-    }
 
-    // Force steering into the wall to guarantee we slide against it and trigger pixelsurf prediction
-    if (wallFound && !(Globals::localPlayer->flags() & FL_ONGROUND)) {
-        Vector steerVec = Vector(-bestNormal.x, -bestNormal.y, 0.0f); // move directly into the wall
-        steerVec.Normalize();
-        
-        float steerYaw = RAD2DEG(atan2(steerVec.y, steerVec.x));
-        float yaw_delta = cmd->viewangles.y - steerYaw;
-        float rad = DEG2RAD(yaw_delta);
-        
-        cmd->forwardmove = cos(rad) * 450.f;
-        cmd->sidemove = -sin(rad) * 450.f;
+        if (wallFound && !(Globals::localPlayer->flags() & FL_ONGROUND)) {
+            // Calculate tangent direction parallel to the wall based on view direction
+            Vector viewForward(cos(DEG2RAD(cmd->viewangles.y)), sin(DEG2RAD(cmd->viewangles.y)), 0.0f);
+            Vector tangent(bestNormal.y, -bestNormal.x, 0.0f);
+            if (viewForward.x * tangent.x + viewForward.y * tangent.y < 0.0f) {
+                tangent = Vector(-tangent.x, -tangent.y, 0.0f);
+            }
+            
+            // Hug the wall by steering slightly into it (25%) while mostly moving parallel to it (85%)
+            Vector steerVec = tangent * 0.85f - bestNormal * 0.25f;
+            steerVec.Normalize();
+            
+            float steerYaw = RAD2DEG(atan2(steerVec.y, steerVec.x));
+            float yaw_delta = cmd->viewangles.y - steerYaw;
+            float rad = DEG2RAD(yaw_delta);
+            
+            cmd->forwardmove = cos(rad) * 450.f;
+            cmd->sidemove = -sin(rad) * 450.f;
+        }
     }
-    // ------------------------------------------------
 
     if (!shouldPixelSurf) {
         int nCmdsPred = Interfaces::prediction->Split->nCommandsPredicted;
         int BackupButtons = cmd->buttons;
 
-        for (int i = 0; i < 2; i++) {
-            // Restore prediction state to the last predicted frame
-            Features::Prediction::restoreEntityToPredictedFrame(nCmdsPred - 1);
+        // Restore prediction state to the last predicted frame
+        Features::Prediction::restoreEntityToPredictedFrame(nCmdsPred - 1);
 
-            if (i == 0)
-                cmd->buttons &= ~IN_DUCK;
-            else
-                cmd->buttons |= IN_DUCK;
+        cmd->buttons |= IN_DUCK;
 
-            for (int z = 0; z < 8; z++) {
-                Features::Prediction::start(cmd);
-                Features::Prediction::end();
+        float lastPredictedVeloZ = velBackup.z;
 
-                if (Globals::localPlayer->flags() & FL_ONGROUND) {
-                    break;
-                }
+        for (int z = 0; z < 8; z++) {
+            Features::Prediction::start(cmd);
+            Features::Prediction::end();
 
-                float zVelo = Globals::localPlayer->velocity().z;
-                // Detect exact vertical velocity signature of a pixelsurf dynamically
-                if (velBackup.z < 10.0f && std::abs(zVelo + targetVelo) < 1.0f) {
-                    shouldPixelSurf = true;
-                    if (i == 0) {
-                        shouldPixelSurf = false;
-                        cmd->buttons = BackupButtons;
-                        return;
-                    }
-                    ticks = cmd->tick_count + z; // Predict target tick precisely without delay offset
-                    BackupButtons = cmd->buttons;
-                    Features::Notifications::addNotification(ImColor(0, 255, 255), "PixelSurf predicted at tick offset: %d", z);
-                    break;
-                }
+            if (Globals::localPlayer->flags() & FL_ONGROUND) {
+                break;
+            }
+
+            float zVelo = Globals::localPlayer->velocity().z;
+            float precedingVeloZ = lastPredictedVeloZ;
+            lastPredictedVeloZ = zVelo;
+
+            // Detect exact vertical velocity signature of a pixelsurf dynamically
+            if (precedingVeloZ < 10.0f && std::abs(zVelo + targetVelo) < 1.0f) {
+                shouldPixelSurf = true;
+                ticks = cmd->tick_count + z; // Predict target tick precisely without delay offset
+                BackupButtons = cmd->buttons;
+                Features::Notifications::addNotification(ImColor(0, 255, 255), "PixelSurf predicted at tick offset: %d", z);
+                break;
             }
         }
+
         cmd->buttons = BackupButtons;
         Features::Prediction::restoreEntityToPredictedFrame(nCmdsPred - 1);
     } else {
+        // We predicted a pixelsurf, so we must crouch immediately to match the predicted trajectory
         cmd->buttons |= IN_DUCK;
+
+        // Once we reach the target predicted tick, lock movement inputs to stick to the ledge
+        if (cmd->tick_count >= ticks) {
+            cmd->forwardmove = 0.0f;
+            cmd->sidemove = 0.0f;
+        }
+        
         if (cmd->tick_count > ticks) {
             if (std::abs(velBackup.z + targetVelo) > 1.0f) {
                 shouldPixelSurf = false;

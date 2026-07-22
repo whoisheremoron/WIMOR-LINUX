@@ -10,11 +10,12 @@ void MainThread() {
     try {
         puts(" \n\
 Powered by...\n\
-   __ _  __ _ _ __ ___   ___ \e[32m ___ _ __   ___  ___ _______ \e[0m \n\
-  / _` |/ _` | '_ ` _ \\ / _ \\\e[32m/ __| '_ \\ / _ \\/ _ \\_  / _ \\\e[0m \n\
- | (_| | (_| | | | | | |  __/\e[32m\\__ \\ | | |  __/  __// /  __/\e[0m \n\
-  \\__, |\\__,_|_| |_| |_|\\___|\e[32m|___/_| |_|\\___|\\___/___\\___|\e[0m \n\
-  |___/ \n\
+\e[97m __      __\e[38;2;25;1;145m.__                     \e[0m \n\
+\e[97m/  \\\\    /  \\\\\e[38;2;25;1;145m__| _____   ___________\e[0m \n\
+\e[97m\\\\   \\\\/\\\\/   /\e[38;2;25;1;145m|  /     \\\\ /  _ \\\\_  __ \\\\\e[0m \n\
+\e[97m \\\\        / \e[38;2;25;1;145m|  |  Y Y  (  <_> )  | \\\\/\e[0m \n\
+\e[97m  \\\\__/\\\\  /  \e[38;2;25;1;145m|__|__|_|  /\\\\____/|__|   \e[0m \n\
+\e[97m       \\\\/   \e[38;2;25;1;145m         \\\\/              \e[0m \n\
 ===========================================================");
         Log::log(LOG, "Initialising...");
 
@@ -35,7 +36,7 @@ Powered by...\n\
             Log::log(ERR, "Failed to initialise hooks!");
         }
 
-        Features::Notifications::addNotification(ImColor(30, 255, 30), "[gs] Successfully injected!");
+        Features::Notifications::addNotification(ImColor(25, 1, 145), "[wm] Successfully injected!");
         Log::log(LOG, "Initialised!");
     }
     catch(const std::exception& e) {

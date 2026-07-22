@@ -1,0 +1,422 @@
+[
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/antiaim.cpp.o -c /home/whoisheremoron/wimor/src/core/features/antiaim.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/antiaim.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/antiaim.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/autoaccept.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autoaccept.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/autoaccept.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/autoaccept.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/autodefuse.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autodefuse.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/autodefuse.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/autodefuse.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/autowall.cpp.o -c /home/whoisheremoron/wimor/src/core/features/autowall.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/autowall.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/autowall.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/backtrack.cpp.o -c /home/whoisheremoron/wimor/src/core/features/backtrack.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/backtrack.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/backtrack.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/bullettracers.cpp.o -c /home/whoisheremoron/wimor/src/core/features/bullettracers.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/bullettracers.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/bullettracers.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/chams.cpp.o -c /home/whoisheremoron/wimor/src/core/features/chams.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/chams.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/chams.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/clantag.cpp.o -c /home/whoisheremoron/wimor/src/core/features/clantag.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/clantag.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/clantag.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/esp.cpp.o -c /home/whoisheremoron/wimor/src/core/features/esp.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/esp.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/esp.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/fastduck.cpp.o -c /home/whoisheremoron/wimor/src/core/features/fastduck.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/fastduck.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/fastduck.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/flappybird.cpp.o -c /home/whoisheremoron/wimor/src/core/features/flappybird.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/flappybird.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/flappybird.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/forwardtrack.cpp.o -c /home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/forwardtrack.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/forwardtrack.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/hitmarkers.cpp.o -c /home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/hitmarkers.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/hitmarkers.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/legitbot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/legitbot.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/legitbot.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/legitbot.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/movement.cpp.o -c /home/whoisheremoron/wimor/src/core/features/movement.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/movement.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/movement.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/nightmode.cpp.o -c /home/whoisheremoron/wimor/src/core/features/nightmode.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/nightmode.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/nightmode.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/noVisualRecoil.cpp.o -c /home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/noVisualRecoil.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/noVisualRecoil.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/noflash.cpp.o -c /home/whoisheremoron/wimor/src/core/features/noflash.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/noflash.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/noflash.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/notifications.cpp.o -c /home/whoisheremoron/wimor/src/core/features/notifications.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/notifications.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/notifications.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/nowplaying.cpp.o -c /home/whoisheremoron/wimor/src/core/features/nowplaying.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/nowplaying.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/nowplaying.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/playerlist.cpp.o -c /home/whoisheremoron/wimor/src/core/features/playerlist.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/playerlist.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/playerlist.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/prediction.cpp.o -c /home/whoisheremoron/wimor/src/core/features/prediction.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/prediction.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/prediction.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/radar.cpp.o -c /home/whoisheremoron/wimor/src/core/features/radar.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/radar.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/radar.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/ragdollGravity.cpp.o -c /home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/ragdollGravity.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/ragdollGravity.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/ragebot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/ragebot.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/ragebot.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/ragebot.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/rankrevealer.cpp.o -c /home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/rankrevealer.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/rankrevealer.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/recoilCrosshair.cpp.o -c /home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/recoilCrosshair.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/recoilCrosshair.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/skinchanger.cpp.o -c /home/whoisheremoron/wimor/src/core/features/skinchanger.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/skinchanger.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/skinchanger.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/skyboxchanger.cpp.o -c /home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/skyboxchanger.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/skyboxchanger.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/slowwalk.cpp.o -c /home/whoisheremoron/wimor/src/core/features/slowwalk.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/slowwalk.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/slowwalk.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/spectators.cpp.o -c /home/whoisheremoron/wimor/src/core/features/spectators.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/spectators.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/spectators.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/triggerbot.cpp.o -c /home/whoisheremoron/wimor/src/core/features/triggerbot.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/triggerbot.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/triggerbot.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/usespam.cpp.o -c /home/whoisheremoron/wimor/src/core/features/usespam.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/usespam.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/usespam.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/features/worldcolormodulation.cpp.o -c /home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/features/worldcolormodulation.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/features/worldcolormodulation.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/clientcmd.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/clientcmd.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/clientcmd.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/createmove.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/createmove.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/createmove.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/createmove.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/drawmodelexecute.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/drawmodelexecute.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/drawmodelexecute.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/emitsound.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/emitsound.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/emitsound.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/events.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/events.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/events.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/events.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/framestagenotify.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/framestagenotify.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/framestagenotify.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/getviewmodelfov.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/getviewmodelfov.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/getviewmodelfov.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/hooks.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/hooks.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/hooks.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/hooks.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/ishltv.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/ishltv.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/ishltv.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/overrideview.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/overrideview.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/overrideview.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/paint.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/paint.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/paint.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/paint.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/sdlhook.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/sdlhook.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/sdlhook.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/hooks/vmt.cpp.o -c /home/whoisheremoron/wimor/src/core/hooks/vmt.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/hooks/vmt.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/hooks/vmt.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/customwidgets.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/customwidgets.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/customwidgets.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_demo.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_draw.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui_impl_sdl.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_impl_sdl.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_widgets.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/menu.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/menu.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/menu.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/menu.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/overlay.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/overlay.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/overlay.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/overlay.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/devwindow.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/devwindow.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/devwindow.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/legit.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/legit.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/legit.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/misc.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/misc.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/misc.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/movement.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/movement.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/movement.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/rage.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/rage.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/rage.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/core/menu/tabs/visuals.cpp.o -c /home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/tabs/visuals.cpp",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/tabs/visuals.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/main.cpp.o -c /home/whoisheremoron/wimor/src/main.cpp",
+  "file": "/home/whoisheremoron/wimor/src/main.cpp",
+  "output": "CMakeFiles/wimor.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/sdk/classes/entity.cpp.o -c /home/whoisheremoron/wimor/src/sdk/classes/entity.cpp",
+  "file": "/home/whoisheremoron/wimor/src/sdk/classes/entity.cpp",
+  "output": "CMakeFiles/wimor.dir/src/sdk/classes/entity.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/sdk/interfaces/interfaces.cpp.o -c /home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp",
+  "file": "/home/whoisheremoron/wimor/src/sdk/interfaces/interfaces.cpp",
+  "output": "CMakeFiles/wimor.dir/src/sdk/interfaces/interfaces.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/sdk/math.cpp.o -c /home/whoisheremoron/wimor/src/sdk/math.cpp",
+  "file": "/home/whoisheremoron/wimor/src/sdk/math.cpp",
+  "output": "CMakeFiles/wimor.dir/src/sdk/math.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/sdk/netvars.cpp.o -c /home/whoisheremoron/wimor/src/sdk/netvars.cpp",
+  "file": "/home/whoisheremoron/wimor/src/sdk/netvars.cpp",
+  "output": "CMakeFiles/wimor.dir/src/sdk/netvars.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/utils/log.cpp.o -c /home/whoisheremoron/wimor/src/utils/log.cpp",
+  "file": "/home/whoisheremoron/wimor/src/utils/log.cpp",
+  "output": "CMakeFiles/wimor.dir/src/utils/log.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/g++ -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all --no-gnu-unique -fno-rtti -std=c++2a -std=gnu++20 -fPIC -o CMakeFiles/wimor.dir/src/utils/patternscanning.cpp.o -c /home/whoisheremoron/wimor/src/utils/patternscanning.cpp",
+  "file": "/home/whoisheremoron/wimor/src/utils/patternscanning.cpp",
+  "output": "CMakeFiles/wimor.dir/src/utils/patternscanning.cpp.o"
+},
+{
+  "directory": "/home/whoisheremoron/wimor/build",
+  "command": "/usr/bin/gcc -Dwimor_EXPORTS -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -W -Wall -Wextra -O3 -march=native -mtune=native -s -fvisibility=hidden -flto -fwhole-program -Wl,--strip-all -fPIC -o CMakeFiles/wimor.dir/src/core/menu/imgui/GL/gl3w.c.o -c /home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c",
+  "file": "/home/whoisheremoron/wimor/src/core/menu/imgui/GL/gl3w.c",
+  "output": "CMakeFiles/wimor.dir/src/core/menu/imgui/GL/gl3w.c.o"
+}
+]

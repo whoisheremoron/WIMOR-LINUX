@@ -1,12 +1,14 @@
 cmake_minimum_required(VERSION 3.11.0)
-project(gamesneeze)
+project(wimor)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_C_FLAGS_DEBUG "-Wall -Wextra -O3 -march=core2 -mtune=native -fvisibility=hidden -flto -ggdb -DDEBUG")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -std=c++2a -Wall -Wextra")
 
-string(TOLOWER $ENV{USE_CLANG} USE_CLANG)
+string(TOLOWER "$ENV{USE_CLANG}" USE_CLANG)
 if(USE_CLANG STREQUAL "true")
   set(CMAKE_C_COMPILER "/usr/bin/clang")
   set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
@@ -33,5 +35,5 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(DBUS REQUIRED dbus-1)
 include_directories(${DBUS_INCLUDE_DIRS})
 
-add_library(gamesneeze SHARED ${SOURCES})
-target_link_libraries(gamesneeze dl pthread SDL2 GL ${DBUS_LIBRARIES})
+add_library(wimor SHARED ${SOURCES})
+target_link_libraries(wimor dl pthread SDL2 GL ${DBUS_LIBRARIES})

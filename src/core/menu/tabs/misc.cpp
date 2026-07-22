@@ -24,9 +24,6 @@ static void selfUnload() {
         std::this_thread::sleep_for(std::chrono::milliseconds(300));
         
         void* handle = dlopen("libwimor.so", RTLD_NOLOAD | RTLD_LAZY);
-        if (!handle) {
-            handle = dlopen("libgamesneeze.so", RTLD_NOLOAD | RTLD_LAZY);
-        }
         if (!handle) return;
         
         void* dlclose_fn = dlsym(RTLD_DEFAULT, "dlclose");
