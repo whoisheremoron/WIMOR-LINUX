@@ -10,18 +10,18 @@
 
 An open-source, highly optimized HvH & legit utility for Counter-Strike: Global Offensive on Linux (forked from gamesneeze).
 
-## 🚀 Key Improvements & Fork Features
+##  Key Improvements & Fork Features
 
 This fork focuses on bringing actual **HvH capabilities** and user experience enhancements:
 
-### ⚡ Ragebot AutoWall (Wall Penetration)
+###  Ragebot AutoWall (Wall Penetration)
 * Real-time iterative bullet simulator (up to 4 wall penetrations).
 * Custom game-accurate surface penetration modifiers (Concrete, Wood, Metal, Glass, Tile, Plaster, etc.).
 * CS:GO matching damage drop-off formulas and material damage multipliers.
 * Exact hitbox-level scale damage calculations incorporating helmet and armor values.
 * Uses standard `MASK_SHOT` (`0x4600400B`) physics trace masks.
 
-### 🎯 Aim & Firing Enhancements
+###  Aim & Firing Enhancements
 * **AutoShoot Toggle/Hold Mode**: Switch between traditional key hold or click-to-toggle auto-firing.
 * **AutoShoot HUD Indicator**: Clear visual status (`TOGGLED`, `HOLDING`, or `OFF`) rendered right on your overlay.
 * **Multi-Hitbox Scanning**: Scan and select hitboxes (Head, Neck, Chest, Stomach, Pelvis) using a custom selection bitmask.
@@ -29,11 +29,11 @@ This fork focuses on bringing actual **HvH capabilities** and user experience en
 * **Highest Damage Target Selection**: Intelligently locks onto the player/hitbox receiving the most damage.
 * **Ammo & Gun Checks**: Automatically ignores utilities, knives, or empty guns to keep gameplay clean and reload cycles smooth.
 
-### 👁️ Scoped Third Person
+###  Scoped Third Person
 * **Third Person While Scoped**: Remain in thirdperson mode when scoping with sniper rifles (SSG08, AWP, SCAR-20, G3SG1).
 * **Automatic Scope Overlay Removal**: Temporarily blocks the black HUD scope lines while scoped in thirdperson, ensuring a clean field of view while retaining scoped accuracy.
 
-### 🎨 Visual & Rebranding Update
+###  Visual & Rebranding Update
 * Fully rebranded UI and paths under **`wimor`** (configuration is stored in `~/.wimor/wimor.cfg`).
 * Refreshed premium dark blue UI color scheme based on **`#190191`**.
 * Default clantag initialized to `"LINUX | WIMOR "` with marquee scroll support.
