@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="/res/logo.png" alt="wimor-linux">
   <a href="/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <a><img src="https://img.shields.io/badge/Platform-Linux-blue.svg" alt="Linux"></a>
   <a><img src="https://img.shields.io/badge/Game-CS:GO-blue.svg" alt="CS:GO"></a>
