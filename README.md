@@ -78,4 +78,4 @@ Scrip `./run.sh` automaticaly copy compiled file to (`csgo legacy/bin`) and inje
 
 
 ## Screenshots
-<img src="/res/logo.png">
+<img src="/res/menu.png">
