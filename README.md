@@ -73,6 +73,9 @@ cd WIMOR-LINUX
 ./toolbox.sh -l
 ```
 
-## Использование `run.sh`
-Скрипт `./run.sh` автоматически копирует скомпилированную библиотеку в директорию игры (`csgo legacy/bin`) и осуществляет инжект в процесс `csgo_linux64` через GDB.
-На случай если ./toolbox.sh -l не сработает (а должен)
+## Using `run.sh`
+Scrip `./run.sh` automaticaly copy compiled file to (`csgo legacy/bin`) and injecting it into `csgo_linux64` via GDB.
+
+
+## Screenshots
+<img src="/res/logo.png">
