@@ -2,7 +2,7 @@
   <a href="/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <a><img src="https://img.shields.io/badge/Platform-Linux-blue.svg" alt="Linux"></a>
   <a><img src="https://img.shields.io/badge/Game-CS:GO-blue.svg" alt="CS:GO"></a>
-  <a><img src="https://img.shields.io/badge/State-Maintained-blue.svg" alt="Maintained"></a>
+  <a><img src="https://img.shields.io/badge/State-Unmaintained-red.svg" alt="Unmaintained"></a>
 </p>
 
 # wimor
